@@ -143,25 +143,39 @@ body{
 	border-bottom: 2px solid #36C9FF;
 }
 .performance  ul{
-	padding-top: 2rem;
+	padding-top: 3rem;
+	display: none;
+}
+.performance  ul.active{
+	display: block;
 }
 .performance  ul li{
 	font-size: 0;
+	position: relative;
+	
+	padding-bottom: 1rem;
 }
-.performance  ul li div{
+.performance  ul li>div{
 	display: inline-block;
-	vertical-align: middle;
 	width: 50%;
 	text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 0.5rem;
 }
-.performance  ul li div p:not(:last-child){
+.performance  ul li>div>div{
 	color: #2b2e3f;
-	font-size: 0.912rem;
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+	position: relative;
 }
-.performance  ul li div span{
+.performance  ul li>div>p{
+	
+}
+.performance  ul li>div>p span{
 	display: inline-block;
 	color: #8c8c8c;
 	font-size: 0.576rem;
+	padding: 0.1rem 0;
 	padding-left: 1.5rem;
 }
 .performance  ul li:nth-child(1) div:nth-child(1) span{
@@ -170,13 +184,37 @@ body{
 }
 .performance  ul li:nth-child(1) div:nth-child(2) span{
 	background: url(../image/dingdan.png) no-repeat 0 center;
-	background-size:1.08rem auto;
+	background-size:1.1rem auto;
+	margin-bottom: 0.3rem;
 }
 .performance  ul li:nth-child(2) div:nth-child(1) span{
 	background: url(../image/huiyuanchognzhi.png) no-repeat 0 center;
-	background-size:1.08rem auto;
+	margin-top: 0.5rem;
+	background-size:0.9rem auto;
 }
 .performance  ul li:nth-child(2) div:nth-child(2) span{
 	background: url(../image/lvhuiyuan.png) no-repeat 0 center;
-	background-size:1.08rem auto;
+	background-size:0.9rem auto;
+}
+.performance  ul li:nth-child(1){
+	border-bottom: 1px solid #D1D1D1;
+	margin-bottom: 1rem;
+}
+.performance  ul li:nth-child(1) div:nth-child(2):before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 1rem;
+	width: 1px;
+	background: #D1D1D1;
+}
+.performance  ul li:nth-child(2) div:nth-child(2):before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 1rem;
+	width: 1px;
+	background: #D1D1D1;
 }
