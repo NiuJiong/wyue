@@ -1,0 +1,79 @@
+body,html,h1,h2,h3,h4,h5,h6,p,div,ul,li,ol,dt,dd,dl,u,i,a{
+	margin: 0;
+	padding: 0;
+	font-family: pingfang;
+}
+ul,li,ol{
+	list-style: none;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+button{
+	outline: none;
+}
+a:focus,a:active{
+	border: none;
+	background: none;
+}
+.clearlr:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.clearlr{
+	zoom: 1;
+}
+
+@font-face {
+	font-family:pingfang;
+	src: url("../font/PingFang Medium.ttf");
+}
+
+
+
+
+/*<!--		头部-->*/
+header{
+	background: #393A3F;
+	color: #ffffff;
+}
+header ul li{
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+	height: 2.4rem;
+	line-height: 2.4rem;
+}
+header ul li:nth-child(1) a{
+	display: block;
+	width: 2.5rem;
+	margin-left: 1.152rem;
+}
+header ul li:nth-child(1) a img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.528rem;
+}
+header ul li:nth-child(2){
+	font-size: 0.864rem;
+}
+header ul li:nth-child(3){
+	text-align: right;
+}
+header ul li:nth-child(3) a{
+	display: block;
+	float: right;
+	width: 2.5rem;
+	margin-right: 1.152rem;
+	text-align: center;
+}
+header ul li:nth-child(3) a img{
+	display: inline-block;
+	width: 0.912rem;
+	vertical-align: middle;
+}
