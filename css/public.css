@@ -13,6 +13,9 @@ img{
 button{
 	outline: none;
 }
+a{
+	text-decoration: none;
+}
 a:focus,a:active{
 	border: none;
 	background: none;
@@ -41,6 +44,7 @@ a:focus,a:active{
 header{
 	background: #393A3F;
 	color: #ffffff;
+	position: relative;
 }
 header ul li{
 	float: left;
@@ -65,15 +69,54 @@ header ul li:nth-child(2){
 header ul li:nth-child(3){
 	text-align: right;
 }
-header ul li:nth-child(3) a{
+header ul li:nth-child(3)>a{
 	display: block;
 	float: right;
 	width: 2.5rem;
 	margin-right: 1.152rem;
 	text-align: center;
 }
-header ul li:nth-child(3) a img{
+header ul li:nth-child(3)>a img{
 	display: inline-block;
 	width: 0.912rem;
 	vertical-align: middle;
 }
+header ul li:nth-child(3) div{
+	position: absolute;
+	right: 2.5rem;
+	top: 2rem;
+	background: white;
+	box-shadow: 1px 0px 1px #D2D2D2,
+				-1px 0px 1px #D2D2D2,
+				0px 1px 1px #D2D2D2,
+				0px -1px 1px #D2D2D2;
+	display: none;
+	z-index: 99999;
+}
+header ul li:nth-child(3) div.active{
+	display: block;
+}
+header ul li:nth-child(3) div a{
+	display: block;
+	color: #4a4a4a;
+	font-size: 0.65rem;
+	line-height: initial;
+	padding: 0.3rem 0.8rem;
+	padding-left: 1.5rem;
+}
+header ul li:nth-child(3) div a:nth-child(1){
+	background: url(../image/mendian.png) no-repeat 0.3rem center;
+	background-size:1rem auto;
+}
+header ul li:nth-child(3) div a:nth-child(2){
+	background: url(../image/pianqu.png) no-repeat 0.5rem center;
+	background-size:0.7rem auto;
+}
+header ul li:nth-child(3) div a:nth-child(3){
+	background: url(../image/yonghu.png) no-repeat 0.4rem center;
+	background-size:1rem auto;
+}
+header ul li:nth-child(3) div a:nth-child(n+2){
+	border-top:1px solid #CECECE;
+}
+

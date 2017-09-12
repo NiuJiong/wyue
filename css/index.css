@@ -141,15 +141,48 @@ hr{
 .quxian ol li{
 	float: right;
 	width: 1.6rem;
-	height: 5rem;
 	margin-right: 1.7rem;
+	height: 5rem;
+	position: relative;
 }
 .quxian ol li:nth-child(1){
 	background: #36C9FF;
 }
+.quxian ol li:nth-child(1):before{
+	content: "赠送金额";
+	position: absolute;
+	top: 100%;
+	padding-top: 0.2rem;
+	left: -40%;
+/*	transform: translateX(-20%);*/
+
+	font-size: 0.672rem;
+	color: #272727;
+	width: 3.2rem;
+}
 .quxian ol li:nth-child(2){
 	background: #B5E058;
 }
+.quxian ol li:nth-child(2):before{
+	content: "实收金额";
+	position: absolute;
+	top: 100%;
+	padding-top: 0.2rem;
+	font-size: 0.672rem;
+	color: #272727;
+	width: 3.2rem;
+	left: -40%;
+}
 .quxian ol li:nth-child(3){
 	background: #EA82AE;
+}
+.quxian ol li:nth-child(3):before{
+	content: "充值金额";
+	position: absolute;
+	top: 100%;
+	padding-top: 0.2rem;
+	font-size: 0.672rem;
+	color: #272727;
+	width: 3.2rem;
+	left: -40%;
 }
