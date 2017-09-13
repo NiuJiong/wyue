@@ -49,17 +49,20 @@
 		<form role="form" class="forms">
 			<div class="form-group">
 				<input type="text" class="form-control" id="name" placeholder="手机号"/>
-				<span>
+				<div class="djs">
 					获取短信验证
-				</span>
+				</div>
 			</div>
-			<div class="form-group">
+			<div class="form-group fs active">
 				<input type="text" class="form-control" id="name" placeholder="验证码"/>
 			</div>
+			<div class="form-group fs">
+				<input type="text" class="form-control" id="name" placeholder="密码"/>
+			</div>
 				
-			<div class="clearlr form-group">
+			<div class="clearlr form-group qihuan">
 				<span>用密码登录</span>
-				<span>用短信验证登录</span>
+				<span class="active">用短信验证登录</span>
 			</div>
 			
 			<div class="form-group">
@@ -75,8 +78,8 @@
 		
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/denglu.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-		
 			var u = navigator.userAgent, app = navigator.appVersion;
 			var ua = navigator.userAgent.toLowerCase();
 			if(/android/.test(ua) && u.indexOf('MicroMessenger')>-1){

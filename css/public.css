@@ -75,6 +75,7 @@ header ul li:nth-child(1) a img{
 header ul li:nth-child(2){
 	font-size: 0.864rem;
 	text-align: center;
+	font-family: pingfangbold;
 }
 header ul li:nth-child(3){
 	text-align: right;

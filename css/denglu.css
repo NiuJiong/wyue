@@ -45,6 +45,9 @@ header ul li:nth-child(2){
 	margin-bottom: 0.5rem;
 }
 .form-group:nth-child(3){
+	margin-bottom: 0.5rem;
+}
+.form-group:nth-child(4){
 	margin-bottom: 1.5rem;
 }
 .form-group .form-control{
@@ -81,29 +84,43 @@ header ul li:nth-child(2){
 	background: url(../image/yanzhegmma.png) no-repeat 0.3rem center;
 	background-size:0.84rem auto;
 }
-.form-group:nth-child(1) span{
+.form-group:nth-child(3) .form-control{
+	background: url(../image/mima.png) no-repeat 0.3rem center;
+	background-size:0.84rem auto;
+}
+.form-group:nth-child(1) .djs{
+	width: 5rem;
+	text-align: center;
 	position: absolute;
-	right: 0.5rem;
+	right: 0.4rem;
 	top: 50%;
 	transform: translateY(-50%);
 	color: #787878;
 	font-size: 0.672rem;
 }
-.form-group:nth-child(3) span{
+.form-group:nth-child(1) .djs.active{
+	background: #c8c8c8;
+}
+.form-group:nth-child(4) span{
 	font-size: 0.624rem;
 	color: #7d7d7d;
 	letter-spacing: 3px;
 }
-.form-group:nth-child(3) span:nth-child(1){
+.form-group:nth-child(4) span.active{
+	color: #36c9ff;
+}
+.form-group:nth-child(4) span:nth-child(1){
 	float: left;
 }
-.form-group:nth-child(3) span:nth-child(2){
+.form-group:nth-child(4) span:nth-child(2){
 	float: right;
-	color: #36c9ff;
-	font-size: ;
 }
-
-
+.fs{
+	display: none;
+}
+.fs.active{
+	display: block;
+}
 
 .form-group button{
 	font-family: "pingfangbold";
@@ -117,7 +134,7 @@ header ul li:nth-child(2){
 .form-group button:focus{
 	background: none;
 }
-.form-group:nth-child(5) button{
+.form-group:nth-child(6) button{
 	border: 1px solid #9AE4FF;
 	color: #9AE4FF;
 }

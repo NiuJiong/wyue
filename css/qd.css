@@ -1,6 +1,7 @@
 .container{
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 .container img{
 	display: block;
@@ -9,3 +10,44 @@
 }
 
 
+.container .con{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.container .con p:nth-child(1){
+	font-size: 2.4528rem;
+	color: white;
+	font-family: pingfangbold;
+	margin-top: 1.24rem;
+	margin-left: 1.536rem;
+}
+
+.container .con p:nth-child(3){
+	
+}
+
+
+
+
+
+
+.form-group button{
+	font-family: "pingfangbold";
+	display: block;
+	width: 100%;
+	border: 1px solid #91E1FF;
+	color: #36c9ff;
+	font-size: 0.864rem;
+	letter-spacing: 0.5rem;
+	background: none;
+}
+.form-group button:focus{
+	background: none;
+}
+.form-group:last-child button{
+	border: 1px solid #9AE4FF;
+	color: #9AE4FF;
+}
