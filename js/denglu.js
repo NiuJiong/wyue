@@ -6,7 +6,7 @@ $(function() {
 		var num = parseInt($(this).html());
 		console.log(num);
 		if(isNaN(num)) {
-			var time = 5;
+			var time = 60;
 			$(".forms .djs").html(time + 'S');
 			time--;
 			$(".forms .djs").addClass("active");
