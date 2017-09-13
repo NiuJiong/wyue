@@ -1,3 +1,8 @@
+header ul li:nth-child(2){
+	font-family: pingfangbold;
+	font-weight: normal;
+}
+
 form{
 	margin-top:3.888rem;
 	
