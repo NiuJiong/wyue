@@ -1,4 +1,8 @@
-body{
+/*body{
+	background: #F1F1F1;
+}*/
+.tianchongs{
+	height: 6px;
 	background: #F1F1F1;
 }
 .user{
@@ -52,7 +56,6 @@ body{
 
 /*<!--		菜单-->*/
 .menu{
-	margin-top: 6px;
 	background: white;
 /*	padding: 0.384rem 0 0.504rem 0;*/
 }
@@ -124,7 +127,6 @@ body{
 
 /*<!--		业绩-->*/
 .performance{
-	margin-top: 6px;
 	background: white;
 	padding: 0 0.5rem;
 }
@@ -165,7 +167,7 @@ body{
 }
 .performance  ul li>div>div{
 	color: #2b2e3f;
-	font-size: 0.7rem;
+	font-size: 0.912rem;
 	margin-bottom: 0.5rem;
 	position: relative;
 }
