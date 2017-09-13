@@ -20,6 +20,11 @@ a:focus,a:active{
 	border: none;
 	background: none;
 }
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
 .clearlr:after{
 	content: "";
 	display: block;
@@ -35,6 +40,10 @@ a:focus,a:active{
 @font-face {
 	font-family:pingfang;
 	src: url("../font/PingFang Medium.ttf");
+}
+@font-face {
+	font-family:pingfangbold;
+	src: url("../font/PingFang Bold.ttf");
 }
 
 

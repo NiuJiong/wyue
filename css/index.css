@@ -1,6 +1,67 @@
-.container{
-	background: #393A3F;
-	height: 2.352rem;
-	margin: 0;
-	padding: 0;
+form{
+	margin-top:3.888rem;
+	
+}
+.form-group{
+	margin: 0 0.5rem;
+	margin-bottom: 1.104rem;
+}
+.form-group .form-control{
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #ECECEC;
+	color: #c3c3c3;
+	font-size: 0.72rem;
+	border-radius:0;
+	padding-left: 2.88rem;
+}
+.form-group input:focus{
+	outline: none;
+	
+}
+.form-group input::-moz-placeholder{
+	color: #c3c3c3;
+	font-size: 0.72rem;
+}
+.form-group input::-ms-input-placeholder{
+	color: #c3c3c3;
+	font-size: 0.72rem;
+}
+.form-group input::-webkit-input-placeholder{
+	color: #c3c3c3;
+	font-size: 0.72rem;
+}
+.form-group:nth-child(1) .form-control{
+	background: url(../image/shouji.png) no-repeat 0.6rem center;
+	background-size:0.84rem auto;
+}
+.form-group:nth-child(2) .form-control{
+	background: url(../image/mima.png) no-repeat 0.6rem center;
+	background-size:0.84rem auto;
+}
+.form-group:nth-child(3) .form-control{
+	background: url(../image/mingcheng.png) no-repeat 0.6rem center;
+	background-size:0.84rem auto;
+}
+.form-group:nth-child(4) .form-control{
+	background: url(../image/leixin.png) no-repeat 0.6rem center;
+	background-size:0.84rem auto;
+}
+.form-group:nth-child(4){
+	margin-bottom: 2.4rem;
+}
+.form-group:nth-child(5){
+	margin-bottom: 0.72rem;
+}
+.form-group button{
+	font-family: "pingfangbold";
+	display: block;
+	width: 100%;
+	border: 1px solid #91E1FF;
+	color: #36c9ff;
+	font-size: 0.864rem;
+	letter-spacing: 0.5rem;
+}
+.form-group button:focus{
+	background: none;
 }
