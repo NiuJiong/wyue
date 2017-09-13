@@ -3,9 +3,9 @@ body{
 }
 .user{
 	font-size: 0;
-	padding-top: 1rem;
+	padding-top: 0.72rem;
 	background: white;
-	padding-bottom: 0.5rem;
+	padding-bottom:6px;
 }
 .user>div{
 	display: inline-block;
@@ -15,8 +15,8 @@ body{
 	width: 2.88rem;
 	height: 2.88rem;
 	border-radius:50%;
-	margin-left: 0.768rem;
-	margin-right: 1rem;
+	margin-left: 1.152rem;
+	margin-right: 0.5rem;
 }
 .user>div:nth-child(1) img{
 	width: 2.88rem;
@@ -24,14 +24,14 @@ body{
 	border-radius:50%;
 }
 .user>div:nth-child(2) {
-	width: 12rem;
+	width: 12.316rem;
 }
 .user>div:nth-child(2) p{
 	color: #454545;
 	font-size: 0.72rem;
 }
 .user>div:nth-child(2) div{
-	margin-top:0.3rem;
+	margin-top:0.1rem;
 }
 .user>div:nth-child(2) div a{
 	float: left;
@@ -52,9 +52,9 @@ body{
 
 /*<!--		菜单-->*/
 .menu{
-	margin-top: 0.3rem;
+	margin-top: 6px;
 	background: white;
-	padding: 0 0.5rem;
+/*	padding: 0.384rem 0 0.504rem 0;*/
 }
 .menu ul{
 	text-align: center;
@@ -66,7 +66,8 @@ body{
 	display: block;
 	font-size: 0.624rem;
 	color: #454545;
-	padding: 2.5rem 0 0.5rem 0;
+/*	padding: 2.5rem 0 0.5rem 0;*/
+	padding: 2.04rem 0 0.504rem 0;
 }
 .menu ul li:nth-child(1){
 	border-bottom: 1px solid #DEDEDE;
@@ -100,30 +101,30 @@ body{
 	background: #CCCCCC;
 }
 .menu ul li:nth-child(1) div:nth-child(1) a{
-	background: url(../image/yingyeshujku.png) no-repeat center 0.8rem;
-	background-size:1.272rem auto;
+	background: url(../image/yingyeshujku.png) no-repeat center 0.384rem;
+	background-size:1.344rem auto;
 }
 .menu ul li:nth-child(1) div:nth-child(2) a{
-	background: url(../image/keren.png) no-repeat center 0.8rem;
-	background-size:1.272rem auto;
+	background: url(../image/keren.png) no-repeat center 0.384rem;
+	background-size:1.344rem auto;
 }
 .menu ul li:nth-child(2) div:nth-child(1) a{
-	background: url(../image/paiming.png) no-repeat center 0.8rem;
-	background-size:1.272rem auto;
+	background: url(../image/paiming.png) no-repeat center 0.384rem;
+	background-size:1.344rem auto;
 }
 .menu ul li:nth-child(2) div:nth-child(2) a{
-	background: url(../image/duibi.png) no-repeat center 0.8rem;
-	background-size:1.272rem auto;
+	background: url(../image/duibi.png) no-repeat center 0.384rem;
+	background-size:1.344rem auto;
 }
 .menu ul li:nth-child(2) div:nth-child(3) a{
-	background: url(../image/xiaoguo.png) no-repeat center 0.8rem;
-	background-size:1.272rem auto;
+	background: url(../image/xiaoguo.png) no-repeat center 0.384rem;
+	background-size:1.344rem auto;
 }
 
 
 /*<!--		业绩-->*/
 .performance{
-	margin-top: 0.3rem;
+	margin-top: 6px;
 	background: white;
 	padding: 0 0.5rem;
 }
@@ -136,14 +137,14 @@ body{
 	text-align: center;
 	color: #7d7d7d;
 	font-size: 0.816rem;
-	padding: 0.7rem 0 0.2rem 0;
+	padding: 0.672rem 0 0 0;
 }
 .performance ol li.active{
 	color: #36c9ff;
 	border-bottom: 2px solid #36C9FF;
 }
 .performance  ul{
-	padding-top: 3rem;
+	padding-top: 2.112rem;
 	display: none;
 }
 .performance  ul.active{
@@ -152,19 +153,19 @@ body{
 .performance  ul li{
 	font-size: 0;
 	position: relative;
-	
-	padding-bottom: 1rem;
+	padding-bottom: 0.288rem;
 }
 .performance  ul li>div{
 	display: inline-block;
 	width: 50%;
 	text-align: center;
 	vertical-align: bottom;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1rem;
+	letter-spacing: 2px;
 }
 .performance  ul li>div>div{
 	color: #2b2e3f;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	margin-bottom: 0.5rem;
 	position: relative;
 }
@@ -198,14 +199,14 @@ body{
 }
 .performance  ul li:nth-child(1){
 	border-bottom: 1px solid #D1D1D1;
-	margin-bottom: 1rem;
+	margin-bottom: 0.288rem;
 }
 .performance  ul li:nth-child(1) div:nth-child(2):before{
 	content: "";
 	position: absolute;
 	left: 50%;
 	top: 0;
-	bottom: 1rem;
+	bottom: 0.288rem;
 	width: 1px;
 	background: #D1D1D1;
 }
@@ -214,7 +215,10 @@ body{
 	position: absolute;
 	left: 50%;
 	top: 0;
-	bottom: 1rem;
+	bottom: 0.288rem;
 	width: 1px;
 	background: #D1D1D1;
+}
+.performance  ul li:nth-child(2) div{
+	margin-top: 0.384rem;
 }
