@@ -6,7 +6,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
 
 		<script src="js/width.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
@@ -19,6 +19,7 @@
 		</script>
 	</head>
 	<body>
+		
 		<!--		头部-->
 		<header>
 			<ul class="clearlr">
@@ -26,7 +27,7 @@
 					<a href="javascript:history.go(-1)" class="left"><img src="image/huitui.png" /></a>
 				</li>
 				<li>
-					立即注册
+					登录
 				</li>
 				<li>
 					<a class="right">
@@ -43,39 +44,44 @@
 		
 		<script src="js/anios.js" type="text/javascript" charset="utf-8"></script>
 		
-<!--		注册表单-->
+		
+<!--		登录-->
+		<div class="start">
+			<div>
+				<img src="image/tou.png"/>
+			</div>
+			<p>* 请登入你的账号 *</p>
+		</div>
+		
 		<form role="form" class="forms">
 			<div class="form-group">
 				<input type="text" class="form-control" id="name" placeholder="手机号"/>
+				<span>
+					获取短信验证
+				</span>
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" id="name" placeholder="密码"/>
+				<input type="text" class="form-control" id="name" placeholder="验证码"/>
 			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" id="name" placeholder="门店名称"/>
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" id="name" placeholder="门店类型"/>
+				
+			<div class="clearlr form-group">
+				<span>用密码登录</span>
+				<span>用短信验证登录</span>
 			</div>
 			
 			<div class="form-group">
-				<button class="btn btn-default">立即注册</button>
+				<button class="btn btn-default">登录</button>
 			</div>
 			<div class="form-group">
-				<button class="btn btn-default">立即登录</button>
+				<button class="btn btn-default">立即注册</button>
 			</div>
 		</form>
 		
 		
 		
 		
-		
-		
-		
-		
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-		
 		<script type="text/javascript">
 		
 			var u = navigator.userAgent, app = navigator.appVersion;
@@ -84,7 +90,5 @@
 				$(".forms .form-group").css("marginLeft","1rem");
 			}
 		</script>
-		
-		
 	</body>
 </html>
