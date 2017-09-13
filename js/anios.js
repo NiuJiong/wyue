@@ -10,7 +10,7 @@
 //		   alert("ios");
 	} else if (/android/.test(ua) && u.indexOf('MicroMessenger') > -1) {
 		  left.style.marginLeft = "1rem";
-		  right.style.marginLeft = "1rem";
+		  right.style.marginRight = "1rem";
 		  userleft.style.marginLeft = "1rem"; 
 		  userwid.style.width = "12.65rem";  
 	}
