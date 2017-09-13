@@ -21,6 +21,9 @@ form{
 	padding-left: 2.3rem;
 	height: 1.632rem;
 }
+.form-group p{
+	line-height: 1.632rem;
+}
 .form-group input:focus{
 	outline: none;
 	
@@ -79,6 +82,23 @@ form{
 
 .form-group:nth-child(4){
 	position: relative;
+}
+.form-group:nth-child(4) .ul{
+	position: absolute;
+	
+	left: 0;
+	right: 0;
+	background: white;
+	border: 1px solid #ECECEC;
+	border-top:none;
+}
+.form-group:nth-child(4) .ul li{
+	border-bottom: 1px solid #ECECEC;
+    color: #c3c3c3;
+    font-size: 0.72rem;
+    padding-left: 2.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 

@@ -28,17 +28,21 @@ $(function() {
 	});
 
 	$(".qihuan span").click(function() {
+		$(".qihuan span").removeClass("active");
+		$(this).addClass("active");
 		var i = $(this).index();
 		var j;
 		if(i == 1) {
 			j = 0;
+			$(".djs").css("display","block");
 		} else if(i == 0) {
 			j = 1;
+			$(".djs").css("display","none");
 		}
-		$(".qihuan span").removeClass("active");
-		$(this).addClass("active");
+		
 		$(".fs").removeClass("active");
 		$(".fs:eq(" + j + ")").addClass("active");
+		
 	});
 
 })
