@@ -5,6 +5,7 @@
 	var userwid = document.querySelector(".user .wid");
 	var u = navigator.userAgent, app = navigator.appVersion;
 	var ua = navigator.userAgent.toLowerCase();
+	var form = document.querySelector("form .form-group");
 	
 	if (/iphone|ipad|ipod/.test(ua)) {
 //		   alert("ios");
@@ -12,6 +13,8 @@
 		  left.style.marginLeft = "1rem";
 		  right.style.marginRight = "1rem";
 		  userleft.style.marginLeft = "1rem"; 
-		  userwid.style.width = "12.65rem";  
+		  userwid.style.width = "12.65rem";
+		  form.style.marginLeft = "1rem";
+		  form.style.marginRight = "1rem";
 	}
 

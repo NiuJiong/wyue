@@ -14,6 +14,7 @@ form{
 	font-size: 0.72rem;
 	border-radius:0;
 	padding-left: 2.88rem;
+	height: 1.632rem;
 }
 .form-group input:focus{
 	outline: none;
@@ -37,15 +38,15 @@ form{
 }
 .form-group:nth-child(2) .form-control{
 	background: url(../image/mima.png) no-repeat 0.6rem center;
-	background-size:0.84rem auto;
+	background-size:0.9rem auto;
 }
 .form-group:nth-child(3) .form-control{
 	background: url(../image/mingcheng.png) no-repeat 0.6rem center;
-	background-size:0.84rem auto;
+	background-size:0.95rem auto;
 }
 .form-group:nth-child(4) .form-control{
 	background: url(../image/leixin.png) no-repeat 0.6rem center;
-	background-size:0.84rem auto;
+	background-size:1.05rem auto;
 }
 .form-group:nth-child(4){
 	margin-bottom: 2.4rem;
@@ -64,4 +65,8 @@ form{
 }
 .form-group button:focus{
 	background: none;
+}
+.form-group:nth-child(6) button{
+	border: 1px solid #9AE4FF;
+	color: #9AE4FF;
 }
