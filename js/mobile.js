@@ -13,6 +13,9 @@ for(var i = 0; i < headaa.length; i++) {
 		this.style.color = "#454545";
 		this.style.backgroundColor = "";
 	}, false);
+	headaa[i].addEventListener('contextmenu', function(e){
+	    e.preventDefault();
+	 });
 }
 
 var menu = document.querySelector(".menu");
@@ -33,6 +36,9 @@ for(var i = 0; i < li.length; i++) {
 		this.style.color = "#454545";
 		this.style.backgroundColor = "";
 	}, false);
+	li[i].addEventListener('contextmenu', function(e){
+	    e.preventDefault();
+	});
 }
 
 
@@ -51,6 +57,9 @@ for(var i = 0; i < ql.length; i++) {
 		this.querySelector("p span").style.color = "#8c8c8c";
 		this.style.backgroundColor = "";
 	}, false);
+	ql[i].addEventListener('contextmenu', function(e) {
+		e.preventDefault();
+	});
 }
 
 var md = document.querySelector(".user .wid div a");
@@ -66,6 +75,9 @@ md.addEventListener("touchend", function() {
 		this.style.color = "#454545";
 		this.style.background = ""
 }, false);
+	md.addEventListener('contextmenu', function(e){
+	    e.preventDefault();
+	});
 sp.addEventListener("touchstart", function() {
 		this.style.backgroundColor = "#ececec";
 		this.style.color = "#36c9ff";
@@ -77,6 +89,8 @@ sp.addEventListener("touchend", function() {
 		this.style.background = ""
 }, false);
 
-
+	sp.addEventListener('contextmenu', function(e){
+	    e.preventDefault();
+	});
 
 
