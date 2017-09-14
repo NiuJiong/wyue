@@ -1,3 +1,20 @@
+//导航
+var head = document.querySelector("header");
+var headaa = head.querySelectorAll("div a");
+
+for(var i = 0; i < headaa.length; i++) {
+	headaa[i].addEventListener("touchstart", function() {
+
+		this.style.color = "#36c9ff";
+		this.style.backgroundColor = "#ececec";
+	}, false);
+	headaa[i].addEventListener("touchend", function() {
+
+		this.style.color = "#454545";
+		this.style.backgroundColor = "";
+	}, false);
+}
+
 var menu = document.querySelector(".menu");
 var li = menu.querySelectorAll("a");
 
@@ -9,7 +26,7 @@ for(var i = 0; i < li.length; i++) {
 	li[i].addEventListener("touchstart", function() {
 
 		this.style.color = "#36c9ff";
-		this.style.backgroundColor = "#d1d1d1";
+		this.style.backgroundColor = "#ececec";
 	}, false);
 	li[i].addEventListener("touchend", function() {
 
@@ -24,7 +41,7 @@ var ql = per.querySelectorAll(".ql");
 
 for(var i = 0; i < ql.length; i++) {
 	ql[i].addEventListener("touchstart", function() {
-		this.style.backgroundColor = "#d1d1d1";
+		this.style.backgroundColor = "#ececec";
 		this.querySelector("div").style.color = "#36c9ff";
 		this.querySelector("p span").style.color = "#36c9ff";
 	}, false);
@@ -41,7 +58,7 @@ var sp = document.querySelector(".user .wid div span");
 md.addEventListener("touchstart", function() {
 
 		this.style.color = "#36c9ff";
-		this.style.backgroundColor = "#d1d1d1";
+		this.style.backgroundColor = "#ececec";
 
 }, false);
 md.addEventListener("touchend", function() {
@@ -50,7 +67,7 @@ md.addEventListener("touchend", function() {
 		this.style.background = ""
 }, false);
 sp.addEventListener("touchstart", function() {
-		this.style.backgroundColor = "#d1d1d1";
+		this.style.backgroundColor = "#ececec";
 		this.style.color = "#36c9ff";
 
 }, false);
