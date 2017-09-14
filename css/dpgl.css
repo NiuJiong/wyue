@@ -229,7 +229,6 @@
 #two .panel-collapse .panel-body ul li{
 	width: 100%;
 	position: relative;
-	margin-left: 0;
 }
 #two .panel-collapse .panel-body ul li a{
 	padding-top: 0.456rem;
@@ -328,13 +327,14 @@
 	margin-bottom: 0.336rem;
 }
 #three .panel-collapse .panel-body ul li{
+	width: 100%;
 	position: relative;
 }
 #three .panel-collapse .panel-body ul li div{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 100%;
+	left:100%;
 	width: 8rem;
 	font-size: 0;
 }
