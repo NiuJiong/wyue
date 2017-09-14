@@ -9,7 +9,7 @@ for(var i = 0; i < li.length; i++) {
 	li[i].addEventListener("touchstart", function() {
 
 		this.style.color = "#36c9ff";
-		this.style.backgroundColor = "#fcf9f1";
+		this.style.backgroundColor = "#cccccc";
 	}, false);
 	li[i].addEventListener("touchend", function() {
 
@@ -24,7 +24,7 @@ var ql = per.querySelectorAll(".ql");
 
 for(var i = 0; i < ql.length; i++) {
 	ql[i].addEventListener("touchstart", function() {
-		this.style.backgroundColor = "#fcf9f1";
+		this.style.backgroundColor = "#cccccc";
 		this.querySelector("div").style.color = "#36c9ff";
 		this.querySelector("p span").style.color = "#36c9ff";
 	}, false);
@@ -41,7 +41,7 @@ var sp = document.querySelector(".user .wid div span");
 md.addEventListener("touchstart", function() {
 
 		this.style.color = "#36c9ff";
-		this.style.backgroundColor = "#fcf9f1";
+		this.style.backgroundColor = "#cccccc";
 
 }, false);
 md.addEventListener("touchend", function() {
@@ -50,7 +50,7 @@ md.addEventListener("touchend", function() {
 		this.style.background = ""
 }, false);
 sp.addEventListener("touchstart", function() {
-		this.style.backgroundColor = "#fcf9f1";
+		this.style.backgroundColor = "#cccccc";
 		this.style.color = "#36c9ff";
 
 }, false);
