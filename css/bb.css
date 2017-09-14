@@ -28,7 +28,7 @@
 	border-radius:50%;
 }
 .user>div:nth-child(2) {
-	width: 13.65rem;
+	width: 13.4rem;
 }
 .user>div:nth-child(2) p{
 	color: #454545;
@@ -52,6 +52,9 @@
 	background: url(../image/time.png) no-repeat 0 center;
 	background-size:0.8rem auto;
 	font-size: 0.5rem;
+	padding-top:0.1rem;
+	padding-bottom: 0.1rem;
+	margin-top: -0.2rem;
 }
 
 /*<!--		菜单-->*/
@@ -146,7 +149,7 @@
 	border-bottom: 2px solid #36C9FF;
 }
 .performance  ul{
-	padding-top: 2.112rem;
+	padding-top: 1.5rem;
 	display: none;
 }
 .performance  ul.active{

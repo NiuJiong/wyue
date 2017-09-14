@@ -17,7 +17,7 @@
 }
 .message ul li{
 	/*font-size: 0;*/
-	padding: 10px 0;
+	padding: 5px 0;
 }
 .message ul li>div{
 	float: left;
@@ -27,19 +27,19 @@
 }
 .message ul li:nth-child(1) div:nth-child(1) span{
 	background: url(../image/huiyuan.png) no-repeat 0 center;
-	background-size:0.72rem auto;
+	background-size:0.8rem auto;
 }
 .message ul li:nth-child(1) div:nth-child(2) span{
 	background: url(../image/cishu.png) no-repeat 0 center;
-	background-size:0.72rem auto;
+	background-size:0.8rem auto;
 }
 .message ul li:nth-child(2) div:nth-child(1) span{
 	background: url(../image/chongzhi.png) no-repeat 0 center;
-	background-size:0.72rem auto;
+	background-size:0.9rem auto;
 }
 .message ul li:nth-child(2) div:nth-child(2) span{
 	background: url(../image/xiaofei.png) no-repeat 0 center;
-	background-size:0.72rem auto;
+	background-size:0.8rem auto;
 }
 .message ul li>div:nth-child(1){
 	position: relative;
@@ -62,16 +62,18 @@
 }
 .message ul li>div span{
 	display: inline-block;
-	padding-left: 0.9rem;
+	padding-left: 1.2rem;
 	color: #8c8c8c;
 	font-size: 0.576rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
 }
 
 hr{
 	border: none;
 	margin: 0;
 	padding: 0;
-	height:0.5rem;
+	height:0.35rem;
 	background: #F1F1F1;
 	margin-top: 0;
 	box-shadow:inset 0 2px 5px #CED6DF;
@@ -84,7 +86,7 @@ hr{
 	padding-bottom: 2rem;
 }
 .quxian>p{
-	padding-top: 1rem;
+	padding-top: 0.5rem;
 	text-align: center;
 	color: #434343;
 	font-size:0.912rem;
@@ -106,8 +108,8 @@ hr{
 	
 	border-bottom: 2px solid #BABABA;
 	border-left:2px solid #BABABA;
-	margin-top: 2rem;
-	padding-top: 0.5rem;
+	margin-top: 1rem;
+	padding-top: 0.8rem;
 	
 }
 .quxian ul li{
