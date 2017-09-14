@@ -168,6 +168,12 @@
 	padding-bottom: 1rem;
 	letter-spacing: 2px;
 }
+.performance  ul li:nth-child(1)>div:nth-child(1){
+	padding-top: 0.7rem;
+}
+.performance  ul li:nth-child(2)>div:nth-child(1){
+	padding-top: 1.1rem;
+}
 .performance  ul li>div>div{
 	color: #2b2e3f;
 	font-size: 0.912rem;
@@ -225,5 +231,5 @@
 	background: #E3E3E3;
 }
 .performance  ul li:nth-child(2) div{
-	margin-top: 0.384rem;
+	padding-top: 0.384rem;
 }
