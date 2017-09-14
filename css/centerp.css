@@ -99,7 +99,7 @@ hr{
 	color: #898989;
 }
 .quxian>div{
-	width: 11.712rem;
+	width: 13.712rem;
 	margin: auto;
 	padding-left: 1.8rem;
 	position: relative;
@@ -135,7 +135,7 @@ hr{
 }
 
 .quxian ol{
-	width: 11.712rem;
+	width: 13.712rem;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -143,7 +143,7 @@ hr{
 .quxian ol li{
 	float: right;
 	width: 1.6rem;
-	margin-right: 1.7rem;
+	margin-right: 2.2rem;
 	height: 5rem;
 	position: relative;
 }

@@ -16,9 +16,10 @@ button{
 a{
 	text-decoration: none;
 }
-a:focus,a:active{
+a:focus,a:active,a:visited,a:hover{
 	border: none;
 	background: none;
+	text-decoration: none;
 }
 a {
   -webkit-tap-highlight-color: transparent;
@@ -36,6 +37,10 @@ a {
 .clearlr{
 	zoom: 1;
 }
+
+
+
+
 
 @font-face {
 	font-family:pingfang;

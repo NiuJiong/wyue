@@ -1,0 +1,55 @@
+a{
+	text-decoration: none;
+}
+a:focus,a:active,a:visited,a:hover{
+	border: none;
+	background: none;
+	text-decoration: none;
+}
+
+.modal{
+	top: 25%;
+}
+.modal-dialog{
+	width: 13rem;
+	margin: auto;
+	background: white;
+	
+	padding-top: 0.5rem;
+	border-radius:3px;
+	padding-bottom: 0.4rem;
+}
+.modal-dialog p{
+	text-align: center;
+	color: #272727;
+	font-size: 0.864rem;
+	padding:0.7rem 0;
+	border-bottom: 1px solid #E1E1E1;
+	margin-bottom: 0.96rem;
+	}
+.modal-dialog .btn{
+	margin-left: 5.55555555%;
+	border-radius:0;
+	color: #8e8e8e;
+	font-size: 0.816rem;
+	font-family: pingfang;
+	margin-bottom: 0.576rem;
+	outline: none;
+	border: none;
+}
+.modal-dialog .lst{
+	width: 89%;
+}
+.modal-dialog .btn.active{
+	background: #36C9FF;
+	color: white;
+	border: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
