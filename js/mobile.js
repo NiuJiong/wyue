@@ -76,3 +76,7 @@ sp.addEventListener("touchend", function() {
 		this.style.color = "#454545";
 		this.style.background = ""
 }, false);
+
+
+
+

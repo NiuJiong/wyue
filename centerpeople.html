@@ -51,21 +51,21 @@
 		<div class="message">
 			<ul>
 				<li class="clearlr">
-					<div>
+					<div class="back">
 						<p>10个</p>
 						<span>新增会员</span>
 					</div>
-					<div>
+					<div class="back">
 						<p>10个</p>
 						<span>消费次数</span>
 					</div>
 				</li>
 				<li class="clearlr">
-					<div>
+					<div class="back">
 						<p>15次</p>
 						<span>充值次数</span>
 					</div>
-					<div>
+					<div class="back">
 						<p>1,2700.00</p>
 						<span>消费金额</span>
 					</div>
@@ -126,6 +126,21 @@
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var message = document.querySelector(".message");
+			var messagediv = message.querySelectorAll("ul .back");
+			cons
+			messagediv.addEventListener("touchstart", function() {
+
+			this.style.color = "#36c9ff";
+					this.style.backgroundColor = "#ececec";
+			
+			}, false);
+			messagediv.addEventListener("touchend", function() {
+			
+					this.style.background = ""
+			}, false);
+		</script>
 	</body>
 
 </html>
