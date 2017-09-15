@@ -32,7 +32,7 @@ function huadong(lis) {
 				left = -butto;
 			}
 			var marginl = this.offsetLeft;
-			console.log(marginl);
+//			console.log(marginl);
 			if(left < marginl && right < liswid && left < 0) {
 				this.style.transition = "all 0s";
 				this.style.marginLeft = left + 'px';
@@ -77,7 +77,7 @@ var list = document.querySelectorAll(".huadong");
 
 //var two = document.querySelector("#three");
 //var listthree = three.querySelectorAll(".panel-body ul li");
-console.log(list)
+//console.log(list)
 
 huadong(list);
 //huadong(listthree);
