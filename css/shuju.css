@@ -8,7 +8,7 @@ a:focus,a:active,a:visited,a:hover{
 }
 
 .modal{
-	top: 25%;
+	top: 15%;
 }
 .modal-dialog{
 	width: 13rem;
@@ -52,4 +52,205 @@ a:focus,a:active,a:visited,a:hover{
 .btn:active.focus,
 .btn.active.focus {
     outline: none;
+}
+
+
+/*		<!--		时间	-->*/
+.time{
+	border-bottom: 3px solid #F1F1F1;
+	padding: 0.408rem 0;
+	font-size: 0;
+	text-align: center;
+}
+.time>div{
+
+	
+	
+}
+.time>div div{
+	display: inline-block;
+	vertical-align: middle;
+	color: #393a3f;
+	font-size: 0.624rem;
+	padding: 0 0.5rem;
+}
+.time>div div img{
+	width: 0.432rem;
+}
+.time>div div .btn{
+	font-size: 0.624rem;
+}
+.time>div div:nth-child(2) span:nth-child(2){
+	margin: 0 0.5rem;
+}
+
+
+/*<!--		营业数据-->*/
+.year{
+	border-bottom: 1px solid #F4F4F4;
+	margin: 0 0.5rem;
+}
+.year ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding-top: 0.592rem;
+	padding-bottom: 0.232rem;
+	color: #828282;
+	font-size: 0.72rem;
+}
+.year ul li.active{
+	border-bottom: 3px solid #36C9FF;
+	color: #4CCDFF;
+}
+
+
+/*<!--		菜单-->*/
+.menu{
+	margin: 0 0.5rem;
+	padding-top: 0.2rem;
+}
+.menu div:nth-child(1) {
+	font-size: 0.576rem;
+	color: #606060;
+	float: left;
+}
+.menu div:nth-child(1) p:nth-child(2) {
+	color: #36c9ff;
+}
+.menu div:nth-child(1) p:nth-child(2) img{
+	width: 0.38rem;
+}
+.menu div:nth-child(2){
+	float: right;
+	margin-top: 0.3rem;
+}
+.menu div:nth-child(2) ul{
+	font-size: 0;
+}
+.menu div:nth-child(2) ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.576rem;
+}
+.menu div:nth-child(2) ul li img{
+	width: 0.816rem;
+}
+
+
+/*<!--		报表数据-->*/
+.tablis{
+	padding-top: 0.744rem;
+	display: none;
+}
+.tablis.active{
+	display: block;
+}
+.tablis>p{
+	text-align: center;
+	color: #606060;
+	font-size: 0.576rem;
+}
+.tablis>p:nth-child(1){
+	font-size: 0.72rem;
+	margin-bottom: 0.2rem;
+}
+.tablis>p:nth-child(1) span{
+	font-size: 0.912rem;
+}
+.tablis>p:nth-child(2){
+	/*margin-bottom: 0.936rem;*/
+}
+.tablis>div{
+	margin: 0 2rem;
+	/*border-left:1px solid #CBCBCB;*/
+}
+.tablis>div ul{
+	margin-left: 1rem;
+	border-bottom:1px solid #959595;
+	position: relative;
+}
+.tablis>div ul:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0.5rem;
+	top: 1.28rem;
+	bottom: 0;
+	width: 2px;
+	background: #CBCBCB;
+}
+.tablis>div ul li{
+	height: 1.28rem;
+	border-bottom: 1px solid #DFDFDF;
+	position: relative;
+	
+}
+.tablis>div ul li span{
+	position: absolute;
+	color: #272727;
+	font-size: 0.624rem;
+	bottom: -0.45rem;
+	left: -2.2rem;
+	text-align: right;
+	width: 1.8rem;
+}
+.tablis>div ul li:last-child{
+	border: none;
+}
+.tablis>div ol{
+	margin-left: 1.5rem;
+	padding: 0 0.5rem;
+}
+.tablis>div ol li{
+	float: left;
+	width: 14.285%;
+	color: #272727;
+	font-size: 0.576rem;
+	text-align: center;
+	padding-top: 0.7rem;
+	position: relative;
+}
+.tablis>div ol li:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 0.288rem;
+	width: 1px;
+	background: #979696;
+}
+
+
+.tablis .option{
+	margin-top: 1.2rem;
+	margin-left: 3.5rem;
+	font-size: 0;
+}
+.tablis .option>div{
+	float: left;
+	margin-bottom: 0.5rem;
+}
+.tablis .option>div:nth-child(2){
+	padding-right: ;
+}
+.tablis .option span{
+	padding-left: 1.224rem;
+	background: url(../image/lankuang.png) no-repeat 0 center;
+	background-size:0.84rem auto;
+	color: #868686;
+	font-size: 0.528rem;
+	height: 1rem;
+	display: inline-block;
+	line-height: 1rem;
+	margin-right: 0.8rem;
+}
+.tablis .option span.active{
+	background: url(../image/check.png) no-repeat 0 center;
+	background-size:0.84rem auto;
+}
+.tablis .option input{
+	opacity: 0;
+	display: none;
 }

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 		<title></title>
-		
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
-		<link rel="stylesheet" type="text/css" href="css/shuju.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="css/shuju.css" />
+
 		<script src="js/width.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			to.setFontSize(18);
@@ -18,9 +19,13 @@
 				}
 			}
 		</script>
-	</head>
-	<body>
 		
+		
+		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
 		<!--		头部-->
 		<header>
 			<ul class="clearlr">
@@ -43,21 +48,466 @@
 			</ul>
 		</header>
 		<script src="js/anios.js" type="text/javascript" charset="utf-8"></script>
-		
-		
-<!--		时间	-->
+
+		<!--		时间	-->
 		<div class="time">
-			<button class="btn" data-toggle="modal" data-target="#myModal">今天</button>
+
+			<div>
+				<div class="left">
+					<img src="image/left.png" />
+				</div>
+
+				<div class="">
+					<span>2017-08-16</span>
+					<span>|</span>
+					<span data-toggle="modal" data-target="#myModal">今天</span>
+				</div>
+
+				<div class="right">
+					<img src="image/right.png" />
+				</div>
+			</div>
+			<!--<button class="btn" data-toggle="modal" data-target="#myModal">今天</button>-->
 		</div>
 		<script type="text/javascript">
-			$('#identifier').modal(options)
+			$('#identifier').modal()
 		</script>
 		
 		
 		
+<!--		营业数据-->
+		<div class="year clearfix" >
+			<ul>
+				<li class="active">
+					天
+				</li>
+				<li>
+					周
+				</li>
+				<li>
+					月
+				</li>
+				<li>
+					季
+				</li>
+				<li>
+					年
+				</li>
+			</ul>
+		</div>
 		
 		
-		<div class="popup modal fade" id="myModal"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		
+<!--		菜单-->
+		<div class="menu clearfix">
+			<div>
+				<p>前一天:<span>$5.5</span></p>
+				<p>
+					<img src="image/xiajiantou.png"/>
+					<span>20%</span>
+				</p>
+			</div>	
+			<div>
+					<ul class="clearfix">
+						<li>
+							<img src="image/shuju01.png"/>
+						</li>
+						<li>
+							<img src="image/shuju02.png"/>
+						</li>
+						<li>
+							<img src="image/shuju03.png"/>
+						</li>
+						<li>
+							<img src="image/shuju04.png"/>
+						</li>
+					</ul>
+			</div>
+		</div>
+		
+		
+<!--		报表数据-->
+		<div class="tablis active">
+			<p>营收：<span>￥4.5</span></p>
+			<p>
+				(
+					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
+					、退菜金额:<span>52</span>
+				)
+			</p>
+			
+			
+			<div class="blis">
+				<ul>
+					<li><span>20</span></li>
+					<li><span>18</span></li>
+					<li><span>16</span></li>
+					<li><span>14</span></li>
+					<li><span>12</span></li>
+					<li><span>10</span></li>
+					<li><span>8</span></li>
+					<li><span>6</span></li>
+					<li><span>4</span></li>
+					<li><span>2</span></li>
+					<li><span>0</span></li>
+				</ul>
+				<ol class="clearfix">
+					<li>
+						<span>周一</span>
+					</li>
+					<li>
+						<span>周二</span>
+					</li>
+					<li>
+						<span>周三</span>
+					</li>
+					<li>
+						<span>周四</span>
+					</li>
+					<li>
+						<span>周五</span>
+					</li>
+					<li>
+						<span>周六</span>
+					</li>
+					<li>
+						<span>周日</span>
+					</li>
+				</ol>
+			</div>
+			
+			
+			<div class="option clearfix">
+				<div>
+					<input type="text" />
+					<span class="active">赠送金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>充值金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>实收金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>营收</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>订单数</span>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="tablis">
+			<p>营收：<span>￥5.5</span></p>
+			<p>
+				(
+					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
+					、退菜金额:<span>52</span>
+				)
+			</p>
+			
+			
+			<div class="blis">
+				<ul>
+					<li><span>20</span></li>
+					<li><span>18</span></li>
+					<li><span>16</span></li>
+					<li><span>14</span></li>
+					<li><span>12</span></li>
+					<li><span>10</span></li>
+					<li><span>8</span></li>
+					<li><span>6</span></li>
+					<li><span>4</span></li>
+					<li><span>2</span></li>
+					<li><span>0</span></li>
+				</ul>
+				<ol class="clearfix">
+					<li>
+						<span>周一</span>
+					</li>
+					<li>
+						<span>周二</span>
+					</li>
+					<li>
+						<span>周三</span>
+					</li>
+					<li>
+						<span>周四</span>
+					</li>
+					<li>
+						<span>周五</span>
+					</li>
+					<li>
+						<span>周六</span>
+					</li>
+					<li>
+						<span>周日</span>
+					</li>
+				</ol>
+			</div>
+			
+			
+			<div class="option clearfix">
+				<div>
+					<input type="text" />
+					<span class="active">赠送金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>充值金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>实收金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>营收</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>订单数</span>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="tablis">
+			<p>营收：<span>￥6.5</span></p>
+			<p>
+				(
+					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
+					、退菜金额:<span>52</span>
+				)
+			</p>
+			
+			
+			<div class="blis">
+				<ul>
+					<li><span>20</span></li>
+					<li><span>18</span></li>
+					<li><span>16</span></li>
+					<li><span>14</span></li>
+					<li><span>12</span></li>
+					<li><span>10</span></li>
+					<li><span>8</span></li>
+					<li><span>6</span></li>
+					<li><span>4</span></li>
+					<li><span>2</span></li>
+					<li><span>0</span></li>
+				</ul>
+				<ol class="clearfix">
+					<li>
+						<span>周一</span>
+					</li>
+					<li>
+						<span>周二</span>
+					</li>
+					<li>
+						<span>周三</span>
+					</li>
+					<li>
+						<span>周四</span>
+					</li>
+					<li>
+						<span>周五</span>
+					</li>
+					<li>
+						<span>周六</span>
+					</li>
+					<li>
+						<span>周日</span>
+					</li>
+				</ol>
+			</div>
+			
+			
+			<div class="option clearfix">
+				<div>
+					<input type="text" />
+					<span class="active">赠送金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>充值金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>实收金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>营收</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>订单数</span>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="tablis">
+			<p>营收：<span>￥7.5</span></p>
+			<p>
+				(
+					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
+					、退菜金额:<span>52</span>
+				)
+			</p>
+			
+			
+			<div class="blis">
+				<ul>
+					<li><span>20</span></li>
+					<li><span>18</span></li>
+					<li><span>16</span></li>
+					<li><span>14</span></li>
+					<li><span>12</span></li>
+					<li><span>10</span></li>
+					<li><span>8</span></li>
+					<li><span>6</span></li>
+					<li><span>4</span></li>
+					<li><span>2</span></li>
+					<li><span>0</span></li>
+				</ul>
+				<ol class="clearfix">
+					<li>
+						<span>周一</span>
+					</li>
+					<li>
+						<span>周二</span>
+					</li>
+					<li>
+						<span>周三</span>
+					</li>
+					<li>
+						<span>周四</span>
+					</li>
+					<li>
+						<span>周五</span>
+					</li>
+					<li>
+						<span>周六</span>
+					</li>
+					<li>
+						<span>周日</span>
+					</li>
+				</ol>
+			</div>
+			
+			
+			<div class="option clearfix">
+				<div>
+					<input type="text" />
+					<span class="active">赠送金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>充值金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>实收金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>营收</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>订单数</span>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="tablis">
+			<p>营收：<span>￥8.5</span></p>
+			<p>
+				(
+					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
+					、退菜金额:<span>52</span>
+				)
+			</p>
+			
+			
+			<div class="blis">
+				<ul>
+					<li><span>20</span></li>
+					<li><span>18</span></li>
+					<li><span>16</span></li>
+					<li><span>14</span></li>
+					<li><span>12</span></li>
+					<li><span>10</span></li>
+					<li><span>8</span></li>
+					<li><span>6</span></li>
+					<li><span>4</span></li>
+					<li><span>2</span></li>
+					<li><span>0</span></li>
+				</ul>
+				<ol class="clearfix">
+					<li>
+						<span>周一</span>
+					</li>
+					<li>
+						<span>周二</span>
+					</li>
+					<li>
+						<span>周三</span>
+					</li>
+					<li>
+						<span>周四</span>
+					</li>
+					<li>
+						<span>周五</span>
+					</li>
+					<li>
+						<span>周六</span>
+					</li>
+					<li>
+						<span>周日</span>
+					</li>
+				</ol>
+			</div>
+			
+			
+			<div class="option clearfix">
+				<div>
+					<input type="text" />
+					<span class="active">赠送金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>充值金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>实收金额</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>营收</span>
+				</div>
+				<div>
+					<input type="text" />
+					<span>订单数</span>
+				</div>
+			</div>
+			
+			
+		</div>
+
+
+
+		<!--		时间弹窗-->
+		<div class="popup modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog clearfix">
 				<p>今日（2017-8-25）</p>
 				<button class="btn col-xs-5 active">今天</button>
@@ -73,12 +523,12 @@
 				<button class="btn col-xs-11 lst">自定义日期范围</button>
 			</div>
 		</div>
+
 		
-		
-		
-		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shuju.js" type="text/javascript" charset="utf-8"></script>
 	</body>
+
 </html>
