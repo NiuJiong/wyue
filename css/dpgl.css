@@ -130,8 +130,7 @@
 	line-height: 2.5rem;
 	border: 1px solid #969696;
 	background: #F7B55E;
-	margin-top: 10%;
-	transform: translateY(-5%);
+	margin-top: 0.08rem;
 }
 #accordionone .panel-collapse .panel-body a:nth-child(1)>span:nth-child(1) span{
 	background: #F7B55E;
