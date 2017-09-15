@@ -20,16 +20,54 @@
 .container .con p:nth-child(1){
 	font-size: 2.4528rem;
 	color: white;
-	font-family: pingfangbold;
-	margin-top: 1.24rem;
+	
+	margin-top: 0.8rem;
 	margin-left: 1.536rem;
 }
-
+.container .con p:nth-child(1) i{
+	font-family: pingfangbold;
+	text-shadow: 2px 2px 2px black;
+}
+.container .con p:nth-child(2){
+	text-align: center;
+	font-size: 1rem;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-top: 0.2rem;
+}
+.container .con p:nth-child(2) span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	font-family:pingfangbold;
+	color: #FFA800;
+}
 .container .con p:nth-child(3){
+	text-align: center;
+	font-family:pingfangbold;
+	margin-top: 3.2rem;
+	position: relative;
+}
+.container .con p:nth-child(3) span{
+	display: inline-block;
+	font-size: 1.152rem;
+	width: 1.3rem;
+	color: white;
+}
+.container .con p:nth-child(3) span:nth-child(1){
+	position: absolute;
+	left: 45%;
 	
 }
-
-
+.container .con p:nth-child(3) span:nth-child(2){
+	position: absolute;
+	left: 55%;
+	top: 2rem;
+}
+.container .con p:nth-child(3) strong{
+	color: #FFA800;
+	font-size: 1.5rem;
+}
 
 
 
@@ -37,9 +75,10 @@
 .form-group button{
 	font-family: "pingfangbold";
 	display: block;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	border: 1px solid #91E1FF;
-	color: #36c9ff;
+	color: #ffffff;
 	font-size: 0.864rem;
 	letter-spacing: 0.5rem;
 	background: none;
@@ -48,6 +87,9 @@
 	background: none;
 }
 .form-group:last-child button{
-	border: 1px solid #9AE4FF;
-	color: #9AE4FF;
+	border: 1px solid #96A0BF;
+	color: #96A0BF;
+}
+.container .con .onediv{
+	margin-top: 18.5rem;
 }

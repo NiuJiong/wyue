@@ -1,0 +1,155 @@
+body{
+	background: #F1F1F1;
+}
+.revenue{
+	padding-top: 0.6rem;
+	text-align: center;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-bottom: 2px solid #E3E3E3;
+	background: white;
+}
+.revenue p:nth-child(1){
+	color: #36c9ff;
+	font-family: pingfangbold;
+	font-size: 1.92rem;
+	margin-bottom: 0.8rem;
+}
+.revenue p:nth-child(2){
+	font-size: 0;
+	margin-bottom: 0.4rem;
+}
+.revenue p:nth-child(2) span{
+	display: inline-block;
+	color: #8c8c8c;
+	font-size: 0.8rem;
+	padding-left: 1.9rem;
+	background: url(../image/yignshou.png) no-repeat 0 center;
+	background-size:1.352rem auto;
+	letter-spacing: 3px;
+}
+.revenue p:nth-child(n+3){
+	text-align: right;
+	font-size: 0.528rem;
+	color: #606060;
+}
+.revenue p:nth-child(3) img{
+	width: 0.35rem;
+	margin: 0 2px;
+}
+
+
+/*<!--		店内订单表-->*/
+.orderlist{
+	background: white;
+}
+.orderlist>p{
+	font-size: 0.768rem;
+	color: #303030;
+	padding-left: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	border-left:0.336rem solid #36C9FF;
+}
+
+.orderlist ul{
+	position: relative;
+}
+.orderlist ul:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	width: 1px;
+	background: #F2F2F2;
+}
+.orderlist ul li{
+	float: left;
+	width: 50%;
+	border-top:1px solid #EEEEEE;
+	text-align: center;
+}
+.orderlist ul li p:nth-child(1){
+	padding-top: 0.6rem;
+	color: #2b2e3f;
+	font-size: 0.912rem;
+	margin-bottom: 0.3rem;
+}
+.orderlist ul li p:nth-child(2){
+	color: #8c8c8c;
+	font-size: 0.576rem;
+}
+.orderlist ul li p:nth-child(2) span{
+	padding-left: 1.132rem;
+}
+.orderlist ul li:nth-child(1) p:nth-child(2) span{
+	background: url(../image/shishou.png) no-repeat 0 center;
+	background-size:0.72rem auto;
+}
+.orderlist ul li:nth-child(2) p:nth-child(2) span{
+	background: url(../image/yingshou02.png) no-repeat 0 center;
+	background-size:0.72rem auto;
+}
+.orderlist ul li:nth-child(3) p:nth-child(2) span{
+	background: url(../image/xiaofei02.png) no-repeat 0 center;
+	background-size:0.72rem auto;
+}
+.orderlist ul li:nth-child(4) p:nth-child(2) span{
+	background: url(../image/youhui.png) no-repeat 0 center;
+	background-size:0.72rem auto;
+}
+.orderlist ul li:nth-child(5) p:nth-child(2) span{
+	background: url(../image/danshuju.png) no-repeat 0 center;
+	background-size:0.72rem auto;
+}
+
+
+
+
+.orderlist ul li p:nth-child(3) img{
+	width: 0.35rem;
+	margin: 0 2px;
+}
+
+
+
+
+.orderlist ul li p:nth-child(n+3){
+	text-align: right;
+	font-size: 0.576rem;
+	color: #606060;
+	margin-right: 0.5rem;
+}
+.orderlist ul li p:nth-child(n+3) span{
+	
+	display: block;
+	text-align: right;
+}
+
+.orderlist ul li p:nth-child(3){
+	margin-top: 1.176rem;
+}
+.orderlist ul li:last-child{
+	padding-top: 0.6rem;
+}
+.orderlist ul li:last-child>div{
+	display: inline-block;
+	font-size: 0;
+	width:45%;
+	height: 50%;
+}
+.orderlist ul li:last-child>div span{
+	
+	color: #2b2e3f;
+	font-size: 0.912rem;
+}
+.orderlist ul li:last-child>div:nth-child(n+3){
+	margin-top: 0.7rem;
+}
+.orderlist ul li:last-child>div p{
+	color: #8c8c8c;
+	font-size: 0.576rem;
+}
+
