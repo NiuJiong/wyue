@@ -21,10 +21,18 @@ function huadong(lis) {
 			var left = endx - startx;
 			var right = endy - starty;
 
+
+			for(var j=0;j< lis.length;j++){
+				lis[j].style.transition = "all 0.1s";
+				lis[j].style.marginLeft = "initial";
+			}
+
+
 			if(left <= -butto) {
 				left = -butto;
 			}
 			var marginl = this.offsetLeft;
+			console.log(marginl);
 			if(left < marginl && right < liswid && left < 0) {
 				this.style.transition = "all 0s";
 				this.style.marginLeft = left + 'px';
@@ -34,7 +42,7 @@ function huadong(lis) {
 				left = butto;
 			}
 
-			if(left >= 0) {
+			if(left >= 0 && marginl > butto/2) {
 				this.style.transition = "all 0s";
 				this.style.marginLeft = -butto + left + 'px';
 			}
@@ -63,12 +71,13 @@ function huadong(lis) {
 };
 
 
-var two = document.querySelector("#two");
-var list = two.querySelectorAll(".panel-body ul li");
+//var two = document.querySelector("#two");
+//var list = two.querySelectorAll(".panel-body ul li");
+var list = document.querySelectorAll(".huadong");
 
-var two = document.querySelector("#three");
-var listthree = three.querySelectorAll(".panel-body ul li");
-console.log(listthree)
+//var two = document.querySelector("#three");
+//var listthree = three.querySelectorAll(".panel-body ul li");
+console.log(list)
 
 huadong(list);
-huadong(listthree);
+//huadong(listthree);
