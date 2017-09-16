@@ -7,14 +7,7 @@ a:focus,a:active,a:visited,a:hover{
 	text-decoration: none;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-    outline: none;
-}
+
 
 
 /*		<!--		时间	-->*/

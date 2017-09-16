@@ -93,3 +93,30 @@
 .container .con .onediv{
 	margin-top: 18.5rem;
 }
+
+
+.btn,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+.btn:active,
+.btn:visited{
+    outline: none;
+    background: none;
+    box-shadow: none;
+    border: 1px solid #91E1FF;
+    color: #ffffff;
+    
+}
+.form-group:last-child button,
+.form-group:last-child button:visited,
+.form-group:last-child button:focus{
+	outline: none;
+    background: none;
+    box-shadow: none;
+    border: 1px solid #91E1FF;
+    color: #96A0BF;
+}
