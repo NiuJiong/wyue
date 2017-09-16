@@ -14,7 +14,7 @@ form label{
 	padding-left:0.2rem;
 	font-weight: 100;
 	display: inline-block;
-	vertical-align: text-top;
+	vertical-align: middle;
 	text-align: right;
 	line-height: 1.632rem;
 	margin: 0;
@@ -41,28 +41,24 @@ form label{
 	padding-left:0.2rem;
 	height: 1.632rem;
 	width: 65%;
-	vertical-align: text-top;
+	vertical-align: middle;
 }
 
 .nan span{
 	color: #c3c3c3;
 	font-size: 0.72rem;
 	display: inline-block;
-	vertical-align: text-top;
+	vertical-align:middle;
 		height: 1.632rem;
 		line-height: 1.632rem;
 		margin-right: 1rem;
-	position: relative;
-	padding-left: 1rem;
 }
 .form-group span input{
-	position: absolute;
-	top: 0.35rem;
-	left: 0;
-	
+	margin-top: -0.05rem;
+	font-size: 0;
 	display: inline-block;
 	margin-right: 0.5rem;
-	border: 1px solid red;
+	vertical-align: middle;
 }
 .form-group p{
 	line-height: 1.632rem;
