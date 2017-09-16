@@ -98,7 +98,7 @@ a:focus,a:active,a:visited,a:hover{
 }
 .time>div:nth-child(2)>div div{
 }
-.time>div:nth-child(2)>div div span{
+.time>div:nth-child(2)>div div input{
 	display: inline-block;
 	width: 40%;
     background: #eaeaea;
@@ -111,6 +111,8 @@ a:focus,a:active,a:visited,a:hover{
     margin-bottom: 0.7rem;
     border-radius: 1px;
     letter-spacing: 1px;
+    outline: none;
+    text-align: center;
 }
 body.active{
 	overflow: hidden;
