@@ -85,7 +85,21 @@
 			var ua = navigator.userAgent.toLowerCase();
 			if(/android/.test(ua) && u.indexOf('MicroMessenger')>-1){
 				$(".forms .form-group").css("marginLeft","1rem");
-			}
-		</script>
+}
+
+function btnback(btns) {
+
+	for(var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("touchstart", function() {
+
+			this.style.color = "red";
+			this.style.border = "1px solid red";
+		}, false);
+	}
+}
+var forms = document.querySelector(".forms");
+var btns = forms.querySelectorAll(".btn");
+
+btnback(btns);</script>
 	</body>
 </html>

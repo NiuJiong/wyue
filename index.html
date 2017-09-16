@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 
@@ -18,6 +19,7 @@
 			}
 		</script>
 	</head>
+
 	<body>
 		<!--		头部-->
 		<header>
@@ -29,22 +31,22 @@
 					立即注册
 				</li>
 				<li>
-					
+
 				</li>
 			</ul>
 		</header>
-		
+
 		<script src="js/anios.js" type="text/javascript" charset="utf-8"></script>
-		
-<!--		注册表单-->
+
+		<!--		注册表单-->
 		<form role="form" class="forms">
 			<div class="form-group">
 				<label for="shouji">手机号</label>
-				<input type="text" class="form-control" id="shouji" placeholder="请输入手机号"/>
+				<input type="text" class="form-control" id="shouji" placeholder="请输入手机号" />
 			</div>
 			<div class="form-group">
 				<label for="mima">密码</label>
-				<input type="text" class="form-control" id="mima" placeholder="请输入密码"/>
+				<input type="text" class="form-control" id="mima" placeholder="请输入密码" />
 			</div>
 			<div class="form-group nan">
 				<label for="name">性别</label>
@@ -59,14 +61,14 @@
 				<label for="shouji">门店类型</label>
 				<p class="leixing">
 					<span>选择门店类型</span>
-					<img src="image/xialajiantou.png"/>
+					<img src="image/xialajiantou.png" />
 				</p>
 				<ul class="ul">
 					<li>直营店</li>
 					<li>加盟店</li>
 				</ul>
 			</div>
-			
+
 			<div class="form-group">
 				<button class="btn">立即注册</button>
 			</div>
@@ -74,27 +76,35 @@
 				<button class="btn">立即登录</button>
 			</div>
 		</form>
-		
-		
-		
-		
-		
-		
-		
-		
+
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-		
-			var u = navigator.userAgent, app = navigator.appVersion;
+			var u = navigator.userAgent,
+				app = navigator.appVersion;
 			var ua = navigator.userAgent.toLowerCase();
-			if(/android/.test(ua) && u.indexOf('MicroMessenger')>-1){
-				$(".forms .form-group").css("marginLeft","1rem");
+			if(/android/.test(ua) && u.indexOf('MicroMessenger') > -1) {
+				$(".forms .form-group").css("marginLeft", "1rem");
 			}
+
+			function btnback(btns) {
+
+				for(var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("touchstart", function() {
+
+						this.style.color = "red";
+						this.style.border = "1px solid red";
+					}, false);
+				}
+			}
+			var forms = document.querySelector(".forms");
+			var btns = forms.querySelectorAll(".btn");
+
+			btnback(btns);
 		</script>
-		
-		
+
 	</body>
+
 </html>

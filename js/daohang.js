@@ -1,8 +1,8 @@
 //导航
 
 $(function() {
-	
-//	+号弹框
+
+	//	+号弹框
 	$("header ul li:eq(2) a").click(function() {
 		if($("header ul li:eq(2) div").hasClass("active")) {
 			$("header ul li:eq(2) div").removeClass("active");
@@ -11,9 +11,7 @@ $(function() {
 		}
 	});
 
-
-	
-//	弹框点击效果
+	//	弹框点击效果
 	var head = document.querySelector("header");
 	var headaa = head.querySelectorAll("div a");
 
