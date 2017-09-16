@@ -43,6 +43,7 @@ form label{
 	width: 65%;
 	vertical-align: text-top;
 }
+
 .nan span{
 	color: #c3c3c3;
 	font-size: 0.72rem;
@@ -50,19 +51,18 @@ form label{
 	vertical-align: text-top;
 		height: 1.632rem;
 		line-height: 1.632rem;
-		/*padding-left: 1rem;*/
 		margin-right: 1rem;
-		/*background: url(../image/lankuang.png) no-repeat 0 center;
-		background-size:0.8rem auto;*/
+	position: relative;
+	padding-left: 1rem;
 }
-/*.nan span.active{
-	background: url(../image/check.png) no-repeat 0 center;
-	background-size:0.8rem auto;
-}*/
 .form-group span input{
-	/*opacity: 0;
-	display: none;*/
+	position: absolute;
+	top: 0.35rem;
+	left: 0;
+	
+	display: inline-block;
 	margin-right: 0.5rem;
+	border: 1px solid red;
 }
 .form-group p{
 	line-height: 1.632rem;
