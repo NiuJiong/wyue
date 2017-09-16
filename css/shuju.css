@@ -61,10 +61,11 @@ a:focus,a:active,a:visited,a:hover{
 	display: block;
 }
 .time>div:nth-child(2)>div{
-	width:80%;
+	width:100%;
 	background: white;
 	margin: auto;
 	padding-bottom: 0.3rem;
+	padding-top: 1rem;
 }
 .time>div:nth-child(2)>div p{
 	color: #272727;
@@ -72,10 +73,12 @@ a:focus,a:active,a:visited,a:hover{
 	padding: 0.6rem 0;
 	border-bottom: 1px solid #ECECEC;
 	margin-bottom: 1rem;
+	text-align: left;
+	text-indent: 5%;
 }
 .time>div:nth-child(2)>div button{
 	width: 40%;
-	background: #E4E4E4;
+	background: #eaeaea;
 	font-size: 0.816rem;
 	border: none;
 	color: #8e8e8e;
@@ -86,6 +89,9 @@ a:focus,a:active,a:visited,a:hover{
 	border-radius:1px;
 	letter-spacing: 1px;
 }
+.time>div:nth-child(2)>div button:last-child{
+	margin-left: 55%;
+}
 .time>div:nth-child(2)>div button.active{
 	background: #36C9FF;
 	color: white;
@@ -95,7 +101,7 @@ a:focus,a:active,a:visited,a:hover{
 .time>div:nth-child(2)>div div span{
 	display: inline-block;
 	width: 40%;
-    background: #E4E4E4;
+    background: #eaeaea;
     font-size: 0.816rem;
     border: none;
     color: #8e8e8e;
