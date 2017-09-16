@@ -41,16 +41,64 @@
 					</span>
 				</p>
 				<div class="form-group onediv">
-					<button class="btn">自助开店</button>
+					<button class="btn btnone">自助开店</button>
 				</div>
 				<div class="form-group twodiv">
-					<button class="btn">已有账号登录</button>
+					<button class="btn btntwo">已有账号登录</button>
 				</div>
 			</div>
 		</div>
 
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			function btnback(btns) {
+
+				for(var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("touchstart", function() {
+
+						this.style.color = "#BEBEBE";
+						this.style.border = "1px solid #BEBEBE";
+					}, false);
+//					btns[i].addEventListener("touchend", function() {
+//
+//						this.style.color = "initial";
+//						this.style.border = "1px solid initial";
+//					}, false);
+				}
+			}
+			var forms = document.querySelector(".container");
+			var btnone = forms.querySelector(".btnone");
+			var btntwo = forms.querySelector(".btntwo");
+			btnone.addEventListener("touchstart", function() {
+
+				this.style.color = "#BEBEBE";
+				this.style.border = "1px solid #BEBEBE";
+			}, false);
+			btnone.addEventListener("touchend", function() {
+
+				this.style.color = "#ffffff";
+				this.style.border = "1px solid #91E1FF";
+			}, false);
+			btnone.addEventListener('contextmenu', function(e) {
+				e.preventDefault();
+			});
+			
+			btntwo.addEventListener("touchstart", function() {
+
+				this.style.color = "#BEBEBE";
+				this.style.border = "1px solid #BEBEBE";
+			}, false);
+			btntwo.addEventListener("touchend", function() {
+
+				this.style.color = "#96A0BF";
+				this.style.border = "1px solid #91E1FF";
+			}, false);
+			btntwo.addEventListener('contextmenu', function(e) {
+				e.preventDefault();
+			});
+		</script>
 
 	</body>
 
