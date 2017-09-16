@@ -7,7 +7,7 @@ form{
 	margin-top:3.888rem;
 }
 form label{
-	width: 30%;
+	width: 25%;
 	color: #666666;
 	font-size: 0.72rem;
 	border-radius:0;
@@ -15,9 +15,10 @@ form label{
 	font-weight: 100;
 	display: inline-block;
 	vertical-align: text-top;
-	text-align: center;
+	text-align: right;
 	line-height: 1.632rem;
 	margin: 0;
+	margin-right: 5%;
 }
 .form-horizontal .form-group{
 	margin: 0;
@@ -42,8 +43,36 @@ form label{
 	width: 65%;
 	vertical-align: text-top;
 }
+.nan span{
+	color: #c3c3c3;
+	font-size: 0.72rem;
+	display: inline-block;
+	vertical-align: text-top;
+		height: 1.632rem;
+		line-height: 1.632rem;
+		padding-left: 1rem;
+		margin-right: 1rem;
+		background: url(../image/lankuang.png) no-repeat 0 center;
+		background-size:0.8rem auto;
+}
+.nan span.active{
+	background: url(../image/check.png) no-repeat 0 center;
+	background-size:0.8rem auto;
+}
+.form-group span input{
+	opacity: 0;
+	display: none;
+}
 .form-group p{
 	line-height: 1.632rem;
+	position: relative;
+}
+.form-group p img{
+	position: absolute;
+	right: 0.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.7rem;
 }
 .form-group input:focus{
 	outline: none;
@@ -91,7 +120,6 @@ form label{
 }
 .form-group:nth-child(4) .ul{
 	position: absolute;
-	
 	left: 30%;
 	right: 5%;
 	top: ;
@@ -99,6 +127,10 @@ form label{
 	border: 1px solid #ECECEC;
 	border-bottom:none;
 	border-top:none ;
+	display: none;
+}
+.form-group:nth-child(4) .ul.active{
+	display: block;
 }
 .form-group:nth-child(4) .ul li{
 	border-bottom: 1px solid #ECECEC;

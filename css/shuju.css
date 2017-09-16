@@ -55,34 +55,56 @@ a:focus,a:active,a:visited,a:hover{
 	bottom: 0;
 	background: rgba(0,0,0,0.6);
 	z-index: 88888;
+	display: none;
 }
-.time>div:nth-child(2) div{
+.time>div:nth-child(2).active{
+	display: block;
+}
+.time>div:nth-child(2)>div{
 	width:80%;
 	background: white;
 	margin: auto;
 	padding-bottom: 0.3rem;
 }
-.time>div:nth-child(2) div p{
+.time>div:nth-child(2)>div p{
 	color: #272727;
 	font-size: 0.864rem;
 	padding: 0.6rem 0;
 	border-bottom: 1px solid #ECECEC;
 	margin-bottom: 1rem;
 }
-.time>div:nth-child(2) div button{
+.time>div:nth-child(2)>div button{
 	width: 40%;
 	background: #E4E4E4;
 	font-size: 0.816rem;
 	border: none;
 	color: #8e8e8e;
+	margin-left:5%;
+	margin-right: 5%;
 	padding: 0.25rem 0;
 	margin-bottom: 0.7rem;
 	border-radius:1px;
 	letter-spacing: 1px;
 }
-.time>div:nth-child(2) div button.active{
+.time>div:nth-child(2)>div button.active{
 	background: #36C9FF;
 	color: white;
+}
+.time>div:nth-child(2)>div div{
+}
+.time>div:nth-child(2)>div div span{
+	display: inline-block;
+	width: 40%;
+    background: #E4E4E4;
+    font-size: 0.816rem;
+    border: none;
+    color: #8e8e8e;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.25rem 0;
+    margin-bottom: 0.7rem;
+    border-radius: 1px;
+    letter-spacing: 1px;
 }
 body.active{
 	overflow: hidden;

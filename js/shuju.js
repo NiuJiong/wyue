@@ -20,4 +20,33 @@ $(function(){
 		$(this).addClass("active");
 	});
 	
+	
+//	弹框
+	$(".time .one").click(function(){
+		if($(".time .two").hasClass("active")){
+			$(".time .two").removeClass("active");
+			$("body").removeClass("active");
+		}else{
+			$(".time .two").addClass("active");
+			$("body").addClass("active");
+		}
+	});
+	
+	$(".time .two button").click(function(){
+		$(".time .two button").removeClass("active");
+		$(this).addClass("active");
+		$(".time .two").removeClass("active");
+		$("body").removeClass("active");
+	});
+//	
+//	$(".two").click(function(){
+//		$(".time .two").removeClass("active");
+//		$("body").removeClass("active");
+//	});
+//	$(document).mouseup(function(e){
+//	  var _con = $('.time .two');   // 设置目标区域
+//	  if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
+//	   $(".time .two").removeClass("active");
+//	  }
+//	});
 });
