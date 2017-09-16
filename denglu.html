@@ -89,22 +89,23 @@
 			var forms = document.querySelector(".forms");
 			var btnone = forms.querySelector(".btnone");
 			var btntwo = forms.querySelector(".btntwo");
-			btnone.addEventListener("touchstart", function() {
+			btnone.addEventListener("touchstart", function(e) {
 
 				this.style.color = "#BEBEBE";
 				this.style.border = "1px solid #BEBEBE";
+				e.preventDefault();
 			}, false);
 			btnone.addEventListener("touchend", function() {
 
-				this.style.color = "#ffffff";
+				this.style.color = "#36c9ff";
 				this.style.border = "1px solid #91E1FF";
 			}, false);
 			btnone.addEventListener('contextmenu', function(e) {
 				e.preventDefault();
 			});
 			
-			btntwo.addEventListener("touchstart", function() {
-
+			btntwo.addEventListener("touchstart", function(e) {
+				e.preventDefault();
 				this.style.color = "#BEBEBE";
 				this.style.border = "1px solid #BEBEBE";
 			}, false);

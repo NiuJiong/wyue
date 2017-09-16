@@ -71,8 +71,8 @@
 			var forms = document.querySelector(".container");
 			var btnone = forms.querySelector(".btnone");
 			var btntwo = forms.querySelector(".btntwo");
-			btnone.addEventListener("touchstart", function() {
-
+			btnone.addEventListener("touchstart", function(e) {
+				e.preventDefault();
 				this.style.color = "#BEBEBE";
 				this.style.border = "1px solid #BEBEBE";
 			}, false);
@@ -85,8 +85,8 @@
 				e.preventDefault();
 			});
 			
-			btntwo.addEventListener("touchstart", function() {
-
+			btntwo.addEventListener("touchstart", function(e) {
+				e.preventDefault();
 				this.style.color = "#BEBEBE";
 				this.style.border = "1px solid #BEBEBE";
 			}, false);
