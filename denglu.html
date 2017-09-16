@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
-		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
 
 		<script src="js/width.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
@@ -18,8 +19,9 @@
 			}
 		</script>
 	</head>
+
 	<body>
-		
+
 		<!--		头部-->
 		<header>
 			<ul class="clearlr">
@@ -30,41 +32,40 @@
 					登录
 				</li>
 				<li>
-					
+
 				</li>
 			</ul>
 		</header>
-		
+
 		<script src="js/anios.js" type="text/javascript" charset="utf-8"></script>
-		
-		
-<!--		登录-->
+
+		<!--		登录-->
 		<div class="start">
 			<div>
-				<img src="image/tou.png"/>
+				<img src="image/tou.png" />
 			</div>
 			<p>* 请登入你的账号 *</p>
 		</div>
-		
+
 		<form role="form" class="forms">
 			<div class="form-group">
-				<input type="text" class="form-control" id="name" placeholder="手机号"/>
+				<input type="text" class="form-control" id="name" placeholder="手机号" />
 				<div class="djs">
 					获取短信验证
 				</div>
 			</div>
 			<div class="form-group fs active">
-				<input type="text" class="form-control" id="name" placeholder="验证码"/>
+				<input type="text" class="form-control" id="name" placeholder="验证码" />
 			</div>
 			<div class="form-group fs">
-				<input type="text" class="form-control" id="name" placeholder="密码"/>
+				<input type="text" class="form-control" id="name" placeholder="密码" />
 			</div>
-				
+
 			<div class="clearlr form-group qihuan">
 				<span>用密码登录</span>
 				<span class="active">用短信验证登录</span>
 			</div>
-			
+
 			<div class="form-group">
 				<button class="btn">登录</button>
 			</div>
@@ -72,34 +73,39 @@
 				<button class="btn">立即注册</button>
 			</div>
 		</form>
-		
-		
-		
-		
+
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/denglu.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			var u = navigator.userAgent, app = navigator.appVersion;
+			var u = navigator.userAgent,
+				app = navigator.appVersion;
 			var ua = navigator.userAgent.toLowerCase();
-			if(/android/.test(ua) && u.indexOf('MicroMessenger')>-1){
-				$(".forms .form-group").css("marginLeft","1rem");
-}
+			if(/android/.test(ua) && u.indexOf('MicroMessenger') > -1) {
+				$(".forms .form-group").css("marginLeft", "1rem");
+			}
 
-function btnback(btns) {
+			function btnback(btns) {
 
-	for(var i = 0; i < btns.length; i++) {
-		btns[i].addEventListener("touchstart", function() {
+				for(var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("touchstart", function() {
 
-			this.style.color = "red";
-			this.style.border = "1px solid red";
-		}, false);
-	}
-}
-var forms = document.querySelector(".forms");
-var btns = forms.querySelectorAll(".btn");
+						this.style.color = "red";
+						this.style.border = "1px solid red";
+					}, false);
+					btns[i].addEventListener("touchend", function() {
 
-btnback(btns);</script>
+						this.style.color = "initial";
+						this.style.border = "1px solid initial";
+					}, false);
+				}
+			}
+			var forms = document.querySelector(".forms");
+			var btns = forms.querySelectorAll(".btn");
+
+			btnback(btns);
+		</script>
 	</body>
+
 </html>

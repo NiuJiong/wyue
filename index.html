@@ -97,6 +97,11 @@
 						this.style.color = "red";
 						this.style.border = "1px solid red";
 					}, false);
+					btns[i].addEventListener("touchend", function() {
+
+						this.style.color = "initial";
+						this.style.border = "1px solid initial";
+					}, false);
 				}
 			}
 			var forms = document.querySelector(".forms");
