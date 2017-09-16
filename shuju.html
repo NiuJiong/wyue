@@ -19,12 +19,11 @@
 				}
 			}
 		</script>
-		
-		
+
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<body>
+	<body class="">
 
 		<!--		头部-->
 		<header>
@@ -57,26 +56,37 @@
 					<img src="image/left.png" />
 				</div>
 
-				<div class="">
+				<div class="timeclick">
 					<span>2017-08-16</span>
 					<span>|</span>
-					<span data-toggle="modal" data-target="#myModal">今天</span>
+					<span>今天</span>
 				</div>
 
 				<div class="right">
 					<img src="image/right.png" />
 				</div>
 			</div>
-			<!--<button class="btn" data-toggle="modal" data-target="#myModal">今天</button>-->
+
+			<!--		时间弹窗-->
+			<div>
+				<div>
+					<p>今日（2017-8-25）</p>
+					<button class="active">今天</button>
+					<button>昨天</button>
+					<button>本周</button>
+					<button>上周</button>
+					<button>上月</button>
+					<button>本月</button>
+					<button>本年</button>
+					<button>去年</button>
+					<button>近七天</button>
+					<button>近一月</button>
+					<button>自定义日期范围</button>
+				</div>
+			</div>
 		</div>
-		<!--<script type="text/javascript">
-			$('#identifier').modal()
-		</script>-->
-		
-		
-		
-<!--		营业数据-->
-		<div class="year clearfix" >
+		<!--		营业数据-->
+		<div class="year clearfix">
 			<ul>
 				<li class="active">
 					天
@@ -95,48 +105,43 @@
 				</li>
 			</ul>
 		</div>
-		
-		
-		
-<!--		菜单-->
+
+		<!--		菜单-->
 		<div class="menu clearfix">
 			<div>
 				<p>前一天:<span>$5.5</span></p>
 				<p>
-					<img src="image/xiajiantou.png"/>
+					<img src="image/xiajiantou.png" />
 					<span>20%</span>
 				</p>
-			</div>	
+			</div>
 			<div>
-					<ul class="clearfix">
-						<li>
-							<img src="image/shuju01.png"/>
-						</li>
-						<li>
-							<img src="image/shuju02.png"/>
-						</li>
-						<li>
-							<img src="image/shuju03.png"/>
-						</li>
-						<li>
-							<img src="image/shuju04.png"/>
-						</li>
-					</ul>
+				<ul class="clearfix">
+					<li>
+						<img src="image/shuju01.png" />
+					</li>
+					<li>
+						<img src="image/shuju02.png" />
+					</li>
+					<li>
+						<img src="image/shuju03.png" />
+					</li>
+					<li>
+						<img src="image/shuju04.png" />
+					</li>
+				</ul>
 			</div>
 		</div>
-		
-		
-<!--		报表数据-->
+
+		<!--		报表数据-->
 		<div class="tablis active">
 			<p>营收：<span>￥4.5</span></p>
 			<p>
-				(
-					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
-					、退菜金额:<span>52</span>
-				)
+				( 订单数:
+				<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span> 、退菜金额:
+				<span>52</span> )
 			</p>
-			
-			
+
 			<div class="blis">
 				<ul>
 					<li><span>20</span></li>
@@ -175,8 +180,7 @@
 					</li>
 				</ol>
 			</div>
-			
-			
+
 			<div class="option clearfix">
 				<div>
 					<input type="text" />
@@ -199,20 +203,17 @@
 					<span>订单数</span>
 				</div>
 			</div>
-			
-			
+
 		</div>
-		
+
 		<div class="tablis">
 			<p>营收：<span>￥5.5</span></p>
 			<p>
-				(
-					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
-					、退菜金额:<span>52</span>
-				)
+				( 订单数:
+				<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span> 、退菜金额:
+				<span>52</span> )
 			</p>
-			
-			
+
 			<div class="blis">
 				<ul>
 					<li><span>20</span></li>
@@ -251,8 +252,7 @@
 					</li>
 				</ol>
 			</div>
-			
-			
+
 			<div class="option clearfix">
 				<div>
 					<input type="text" />
@@ -275,19 +275,16 @@
 					<span>订单数</span>
 				</div>
 			</div>
-			
-			
+
 		</div>
 		<div class="tablis">
 			<p>营收：<span>￥6.5</span></p>
 			<p>
-				(
-					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
-					、退菜金额:<span>52</span>
-				)
+				( 订单数:
+				<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span> 、退菜金额:
+				<span>52</span> )
 			</p>
-			
-			
+
 			<div class="blis">
 				<ul>
 					<li><span>20</span></li>
@@ -326,8 +323,7 @@
 					</li>
 				</ol>
 			</div>
-			
-			
+
 			<div class="option clearfix">
 				<div>
 					<input type="text" />
@@ -350,19 +346,16 @@
 					<span>订单数</span>
 				</div>
 			</div>
-			
-			
+
 		</div>
 		<div class="tablis">
 			<p>营收：<span>￥7.5</span></p>
 			<p>
-				(
-					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
-					、退菜金额:<span>52</span>
-				)
+				( 订单数:
+				<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span> 、退菜金额:
+				<span>52</span> )
 			</p>
-			
-			
+
 			<div class="blis">
 				<ul>
 					<li><span>20</span></li>
@@ -401,8 +394,7 @@
 					</li>
 				</ol>
 			</div>
-			
-			
+
 			<div class="option clearfix">
 				<div>
 					<input type="text" />
@@ -425,19 +417,16 @@
 					<span>订单数</span>
 				</div>
 			</div>
-			
-			
+
 		</div>
 		<div class="tablis">
 			<p>营收：<span>￥8.5</span></p>
 			<p>
-				(
-					订单数:<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span>
-					、退菜金额:<span>52</span>
-				)
+				( 订单数:
+				<span>12</span>、消费:<span>￥100</span>、退菜:<span>1</span> 、退菜金额:
+				<span>52</span> )
 			</p>
-			
-			
+
 			<div class="blis">
 				<ul>
 					<li><span>20</span></li>
@@ -476,8 +465,7 @@
 					</li>
 				</ol>
 			</div>
-			
-			
+
 			<div class="option clearfix">
 				<div>
 					<input type="text" />
@@ -500,34 +488,12 @@
 					<span>订单数</span>
 				</div>
 			</div>
-			
-			
+
 		</div>
 
-
-
-		<!--		时间弹窗-->
-		<div class="popup modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog clearfix">
-				<p>今日（2017-8-25）</p>
-				<button class="btn col-xs-5 active">今天</button>
-				<button class="btn col-xs-5">昨天</button>
-				<button class="btn col-xs-5">本周</button>
-				<button class="btn col-xs-5">上周</button>
-				<button class="btn col-xs-5">上月</button>
-				<button class="btn col-xs-5">本月</button>
-				<button class="btn col-xs-5">本年</button>
-				<button class="btn col-xs-5">去年</button>
-				<button class="btn col-xs-5">近七天</button>
-				<button class="btn col-xs-5">近一月</button>
-				<button class="btn col-xs-11 lst">自定义日期范围</button>
-			</div>
-		</div>
-
-		
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/shuju.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 

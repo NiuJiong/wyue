@@ -1,4 +1,5 @@
 $(function(){
+//	门店选择
 	$(".ul").hide();
 	$(".leixing").click(function(){
 		$(".ul").slideToggle();

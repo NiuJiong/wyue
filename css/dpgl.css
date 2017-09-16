@@ -75,7 +75,9 @@
 	
 }
 #accordionone .panel-default .panel-heading{
-	background: #E9E9E9;
+	background: white;
+/*	border-top: 1px solid #ddd;*/
+	border-bottom: 1px solid #ddd;
 	padding: 10px 0.5rem;
 }
 #accordionone .panel-default .panel-heading .col-xs-6{

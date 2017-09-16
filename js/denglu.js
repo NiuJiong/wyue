@@ -27,6 +27,8 @@ $(function() {
 		};
 	});
 
+
+//	登录切换
 	$(".qihuan span").click(function() {
 		$(".qihuan span").removeClass("active");
 		$(this).addClass("active");

@@ -8,8 +8,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/centerp.css" />
-		
-		
+
 		<script src="js/width.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			to.setFontSize(18);
@@ -121,25 +120,22 @@
 
 		</div>
 
-
-<script type="text/javascript">
+		<script type="text/javascript">
 			var message = document.querySelector(".message");
 			var messagediv = message.querySelectorAll("ul .back");
-	for(var i = 0; i < messagediv.length; i++) {
-		messagediv[i].addEventListener("touchstart", function() {
-	
-			this.style.backgroundColor = "#ececec";
-		}, false);
-		messagediv[i].addEventListener("touchend", function() {
-	
-			this.style.backgroundColor = "";
-		}, false);
-	}
+			for(var i = 0; i < messagediv.length; i++) {
+				messagediv[i].addEventListener("touchstart", function() {
+
+					this.style.backgroundColor = "#ececec";
+				}, false);
+				messagediv[i].addEventListener("touchend", function() {
+
+					this.style.backgroundColor = "";
+				}, false);
+			}
 		</script>
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
-		
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

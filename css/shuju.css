@@ -7,44 +7,6 @@ a:focus,a:active,a:visited,a:hover{
 	text-decoration: none;
 }
 
-.modal{
-	top: 15%;
-}
-.modal-dialog{
-	width: 13rem;
-	margin: auto;
-	background: white;
-	
-	padding-top: 0.5rem;
-	border-radius:3px;
-	padding-bottom: 0.4rem;
-}
-.modal-dialog p{
-	text-align: center;
-	color: #272727;
-	font-size: 0.864rem;
-	padding:0.7rem 0;
-	border-bottom: 1px solid #E1E1E1;
-	margin-bottom: 0.96rem;
-	}
-.modal-dialog .btn{
-	margin-left: 5.55555555%;
-	border-radius:0;
-	color: #8e8e8e;
-	font-size: 0.816rem;
-	font-family: pingfang;
-	margin-bottom: 0.576rem;
-	outline: none;
-	border: none;
-}
-.modal-dialog .lst{
-	width: 89%;
-}
-.modal-dialog .btn.active{
-	background: #36C9FF;
-	color: white;
-	border: none;
-}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -61,27 +23,69 @@ a:focus,a:active,a:visited,a:hover{
 	padding: 0.408rem 0;
 	font-size: 0;
 	text-align: center;
+	position: relative;
+	
 }
-.time>div{
 
-	
-	
-}
-.time>div div{
+.time>div:nth-child(1)>div{
 	display: inline-block;
 	vertical-align: middle;
 	color: #393a3f;
 	font-size: 0.624rem;
 	padding: 0 0.5rem;
+	font-family: pingfang;
+	
 }
-.time>div div img{
+.time>div:nth-child(1)>div img{
 	width: 0.432rem;
 }
-.time>div div .btn{
+.time>div:nth-child(1)>div .btn{
 	font-size: 0.624rem;
 }
-.time>div div:nth-child(2) span:nth-child(2){
+.time>div:nth-child(1)>div span:nth-child(2){
 	margin: 0 0.5rem;
+}
+/*		<!--		时间弹窗	-->*/
+
+.time>div:nth-child(2){
+	position: fixed;
+	top:4.18rem;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 88888;
+}
+.time>div:nth-child(2) div{
+	width:80%;
+	background: white;
+	margin: auto;
+	padding-bottom: 0.3rem;
+}
+.time>div:nth-child(2) div p{
+	color: #272727;
+	font-size: 0.864rem;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid #ECECEC;
+	margin-bottom: 1rem;
+}
+.time>div:nth-child(2) div button{
+	width: 40%;
+	background: #E4E4E4;
+	font-size: 0.816rem;
+	border: none;
+	color: #8e8e8e;
+	padding: 0.25rem 0;
+	margin-bottom: 0.7rem;
+	border-radius:1px;
+	letter-spacing: 1px;
+}
+.time>div:nth-child(2) div button.active{
+	background: #36C9FF;
+	color: white;
+}
+body.active{
+	overflow: hidden;
 }
 
 
@@ -254,3 +258,6 @@ a:focus,a:active,a:visited,a:hover{
 	opacity: 0;
 	display: none;
 }
+
+
+

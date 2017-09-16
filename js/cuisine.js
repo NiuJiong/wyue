@@ -1,4 +1,7 @@
 $(function(){
+	
+//	选项卡切换
+	
 	$(".pxlis ul li").click(function(){
 		
 		$(".pxlis ul li").removeClass("active");
