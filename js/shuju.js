@@ -23,19 +23,19 @@ $(function(){
 	
 //	弹框
 	$(".time .one").click(function(){
-		if($(".time .two").hasClass("active")){
-			$(".time .two").removeClass("active");
+		if($(".two").hasClass("active")){
+			$(".two").removeClass("active");
 			$("body").removeClass("active");
 		}else{
-			$(".time .two").addClass("active");
+			$(".two").addClass("active");
 			$("body").addClass("active");
 		}
 	});
 	
-	$(".time .two button").click(function(){
-		$(".time .two button").removeClass("active");
+	$(".two button").click(function(){
+		$(".two button").removeClass("active");
 		$(this).addClass("active");
-		$(".time .two").removeClass("active");
+		$(".two").removeClass("active");
 		$("body").removeClass("active");
 	});
 //	

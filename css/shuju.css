@@ -40,9 +40,9 @@ a:focus,a:active,a:visited,a:hover{
 }
 /*		<!--		时间弹窗	-->*/
 
-.time>div:nth-child(2){
+.two{
 	position: absolute;
-	top:4.18rem;
+	top:4.6rem;
 	left:0;
 	right: 0;
 	bottom: 0;
@@ -50,17 +50,17 @@ a:focus,a:active,a:visited,a:hover{
 	z-index: 88888;
 	display: none;
 }
-.time>div:nth-child(2).active{
+.two.active{
 	display: block;
 }
-.time>div:nth-child(2)>div{
+.two>div{
 	width:100%;
 	background: white;
 	margin: auto;
 	padding-bottom: 0.3rem;
 	padding-top: 1rem;
 }
-.time>div:nth-child(2)>div p{
+.two>div p{
 	color: #272727;
 	font-size: 0.864rem;
 	padding: 0.6rem 0;
@@ -69,8 +69,8 @@ a:focus,a:active,a:visited,a:hover{
 	text-align: left;
 	text-indent: 5%;
 }
-.time>div:nth-child(2)>div button{
-	width: 40%;
+.two>div button{
+	width: 39%;
 	background: #eaeaea;
 	font-size: 0.816rem;
 	border: none;
@@ -82,18 +82,18 @@ a:focus,a:active,a:visited,a:hover{
 	border-radius:1px;
 	letter-spacing: 1px;
 }
-.time>div:nth-child(2)>div button:last-child{
+.two>div button:last-child{
 	margin-left: 55%;
 }
-.time>div:nth-child(2)>div button.active{
+.two>div button.active{
 	background: #36C9FF;
 	color: white;
 }
-.time>div:nth-child(2)>div div{
+.two>div div{
 }
-.time>div:nth-child(2)>div div input{
+.two>div div input{
 	display: inline-block;
-	width: 40%;
+	width: 39%;
     background: #eaeaea;
     font-size: 0.816rem;
     border: none;
