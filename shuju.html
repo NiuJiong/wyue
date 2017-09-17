@@ -5,8 +5,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 		<title></title>
-		
-<!--		<link rel="stylesheet" type="text/css" href="css/layui.css"/>-->
+
+		<link rel="stylesheet" type="text/css" href="css/datepicker.min.css" />
+		<!--		<link rel="stylesheet" type="text/css" href="laydate/theme/default/laydate.css"/>-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/shuju.css" />
@@ -85,8 +86,8 @@
 						自定义日期范围
 					</p>
 					<div>
-						<input type="text" class="starttime" placeholder="起始日期" id="start" readonly="readonly"/>
-						<input type="text" class="starttime" placeholder="结束日期" id="endtime" readonly="readonly"/>
+						<input type="text" placeholder="起始日期" id="data" />
+						<input type="text" placeholder="结束日期" id="dataone" />
 					</div>
 					<button>确定</button>
 				</div>
@@ -497,22 +498,46 @@
 			</div>
 
 		</div>
-		
-		<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/datepicker.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/shuju.js" type="text/javascript" charset="utf-8"></script>
-		
-		
+
 		<script type="text/javascript">
+			var _date = document.getElementById('data');
+			var _dataone = document.getElementById('dataone');
+
+			_date.onfocus = function(e) {
+				var datePicker = new DatePicker({
+					confirmCbk: function(data) {
+						_date.value = data.year + '-' + data.month + '-' + data.day;
+					}
+				});
+				_date.blur();
+				datePicker.open();
+			};
+			_dataone.onfocus = function(e) {
+				var datePicker = new DatePicker({
+					confirmCbk: function(data) {
+						_dataone.value = data.year + '-' + data.month + '-' + data.day;
+					}
+				});
+				_dataone.blur();
+				datePicker.open();
+			};
+		</script>
+
+		<!--<script type="text/javascript">
 			laydate.render({
 			  elem: '#start' //指定元素
 			});
 			laydate.render({
 			  elem: '#endtime' //指定元素
 			});
-		</script>
+		</script>-->
 	</body>
 
 </html>
