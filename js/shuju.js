@@ -22,6 +22,7 @@ $(function(){
 	
 	
 //	弹框
+$(".two").height($("body").height());
 	$(".time .one").click(function(){
 		if($(".two").hasClass("active")){
 			$(".two").removeClass("active");
