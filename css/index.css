@@ -139,3 +139,20 @@ form label{
 }
 
 
+.form-group select{
+	display: inline-block;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ECECEC;
+    color: #c3c3c3;
+    font-size: 0.72rem;
+    border-radius: 0;
+    padding-left: 0.2rem;
+    height: 1.632rem;
+    width: 65%;
+    vertical-align: middle;
+    outline: none;
+}
+.form-group select option{
+	border: none !important;
+}
