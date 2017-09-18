@@ -41,7 +41,7 @@ a:focus,a:active,a:visited,a:hover{
 /*		<!--		时间弹窗	-->*/
 
 .two{
-	position: fixed;
+	position: absolute;
 	top:4.6rem;
 	left:0;
 	right: 0;
@@ -281,6 +281,9 @@ body.active{
 	opacity: 0;
 	display: none;
 }
-
+.sc.active{
+	position: fixed;
+	overflow: hidden;
+}
 
 

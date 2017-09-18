@@ -27,9 +27,11 @@ $(".two").height($("body").height());
 		if($(".two").hasClass("active")){
 			$(".two").removeClass("active");
 			$("body").removeClass("active");
+			$(".sc").removeClass("active");
 		}else{
 			$(".two").addClass("active");
 			$("body").addClass("active");
+			$(".sc").addClass("active");
 		}
 	});
 	
@@ -38,6 +40,7 @@ $(".two").height($("body").height());
 		$(this).addClass("active");
 		$(".two").removeClass("active");
 		$("body").removeClass("active");
+		$(".sc").removeClass("active");	
 	});
 //	
 //	$(".two").click(function(){
