@@ -4,7 +4,7 @@ header ul li:nth-child(2){
 }
 
 form{
-	margin-top:3.888rem;
+	margin-top:1.888rem;
 }
 form label{
 	width: 25%;
@@ -27,7 +27,7 @@ form label{
 	margin-left: 0;
 	margin-right: 0;
 	margin: 0 0.5rem;
-	margin-bottom: 1.104rem;
+	margin-bottom: 0.5rem;
 	font-size: 0;
 }
 .form-group .form-control,.form-group p{
@@ -88,7 +88,7 @@ form label{
 	font-size: 0.72rem;
 }
 .form-group:nth-child(4){
-	margin-bottom: 2.4rem;
+	margin-bottom: 1.4rem;
 }
 .form-group:nth-child(5){
 	margin-bottom: 0.72rem;
